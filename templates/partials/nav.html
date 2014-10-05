@@ -1,0 +1,29 @@
+<nav>
+{{ url }}
+	<ul>
+
+		{% for nav in navs.primary %}
+		<li>
+			{% if nav.file %}
+					<a href="/{{nav.path}}">{{nav.file.title}}</a>
+			{% else %}
+					{{nav.name}}
+			{% endif %}
+			
+			{% if nav.children|length %}
+				<ul>
+						{% for child in nav.children %}
+						<li>
+							{% if child.file %}
+								<a href="/{{child.path}}">{{child.file.title}}</a>
+							{% else %}
+								{{child.name}}
+							{% endif %}
+							</li>
+						{% endfor %}
+				</ul>
+				{% endif %}
+				</li>
+		{% endfor %}
+	</ul>
+</nav>

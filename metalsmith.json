@@ -1,0 +1,25 @@
+{
+	"metadata": {
+    "siteTitle": "Underware",
+    "siteDescription": "Front end developer knowledge base."
+  },
+	"source": "src/",
+	"destination": "build/",
+	"plugins": {
+		"metalsmith-markdown": true,
+		"metalsmith-ruby-sass" : {
+			"outputDir": "css/",
+			"outputStyle": "compressed"
+		},
+		"metalsmith-navigation": {
+			"primary": {
+				"sortBy": "nav_sort",
+				"filterProperty": "nav_groups"
+			}
+		},
+		"metalsmith-templates": {
+			"engine" : "nunjucks",
+			"directory": "templates"
+		}
+	}
+}

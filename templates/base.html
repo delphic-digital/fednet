@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>{{title}} | {{siteTitle}}</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		{% include "templates/partials/nav.html" %}
+
+		<main>
+			{% block content %}
+				<p>{{siteDescription}}</p>
+			{% endblock %}
+		</main>
+
+	</body>
+</html>

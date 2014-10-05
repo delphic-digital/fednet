@@ -1,0 +1,17 @@
+{
+  "name": "underware",
+  "version": "0.0.1",
+  "description": "Front end developer knowledge base",
+  "dependencies": { },
+  "author": "Jeff Mills",
+  "devDependencies": {
+    "metalsmith": "^1.0.1",
+    "metalsmith-navigation": "^0.0.7",
+    "metalsmith-templates": "^0.6.0",
+    "metalsmith-ruby-sass": "^0.1.1",
+    "metalsmith-watch": "^0.1.1",
+    "nunjucks": "^1.1.0",
+    "metalsmith-markdown": "^0.2.1"
+    "metalsmith-permalinks": "^0.4.0"
+  }
+}
