@@ -1,4 +1,6 @@
-body
-{
-	background: #ccc;
-}
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+body { background: #fefdf8; }
+
+main { padding: 0 25px; }
