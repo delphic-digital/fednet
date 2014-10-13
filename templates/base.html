@@ -2,16 +2,29 @@
 	<head>
 		<title>{{title}} | {{siteTitle}}</title>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="{{nav_path|relativePath('css/main.css')}}">
 	</head>
 	<body>
-		{% include "templates/partials/nav.html" %}
+		
+		<aside id="primary-sidebar">
+			<div class="site-title">{{siteTitle}}</div>
+			<nav id="main-nav">
+				{% include "partials/nav.html" %}
+			</nav>
+		</aside>
 
-		<main>
-			{% block content %}
-				<p>{{siteDescription}}</p>
-			{% endblock %}
-		</main>
+		<section id="main-content">
+			<main>
+				{% block content %}
+					<p>{{siteDescription}}</p>
+				{% endblock %}
+			</main>
+
+			<footer>
+				{% include "partials/footer.html" %}
+			</footer>
+		</section>
 
 	</body>
 </html>

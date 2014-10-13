@@ -1,6 +1,22 @@
 html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }
 
-body { background: #fefdf8; }
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
 
-main { padding: 0 25px; }
+body { display: flex; flex-direction: row; background: #fefdf8; }
+
+section#main-content
+{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 0 25px; 
+}
+aside#primary-sidebar { padding: 10px; background: #01a0e4;}
+main { flex: 1;   } 
+nav  {  }
