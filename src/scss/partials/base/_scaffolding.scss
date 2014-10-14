@@ -15,8 +15,15 @@ section#main-content
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	
+
 }
 aside#primary-sidebar { padding: 10px 0; background: #393939;}
-main { flex: 1; padding: 0 25px;   } 
+main { flex: 1; padding: 0 25px;   }
 nav  {  }
+
+footer {
+	padding: 5px;
+	text-align: center;
+	background: #393939;
+	a { border: none;}
+}

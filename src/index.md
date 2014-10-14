@@ -1,12 +1,11 @@
 ---
-title: Home
+title: Overview
 template: page.html
 nav_sort: 1
 nav_groups:
   - primary
 ---
 
-The Underware homepage.
+Welcome to Underware. This is a front end developer knowledge base mainly for [Delphic Digital](http://www.delphicdigital.com).
 
-This is a subheading
-----------------------
+Game on!

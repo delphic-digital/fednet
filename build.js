@@ -16,6 +16,10 @@ var navConfigs = {
     primary:{
         sortBy: 'nav_sort',
         filterProperty: 'nav_groups',
+    },
+    footer:{
+        sortBy: 'nav_sort',
+        filterProperty: 'nav_groups',
     }
 };
 

@@ -3,10 +3,9 @@ html {
 }
 
 
-
-
-body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;  color: #354a57; }
-a    { text-decoration: none; }
+body { font-family: "PT Sans", sans-serif;  color: #354a57; }
+a    { text-decoration: none; color: #445E6E; border-bottom: 1px dotted #445E6E;  }
+a:hover { border: none;}
 
 //Headings
 
@@ -24,5 +23,5 @@ h2 {
 
 main { /* text-shadow: 0px 1px 0px white; */}
 
-.site-title { margin: 10px; font-family: 'Bangers', cursive; font-size: 30px; color: #fff; }
-.site-title a { color: #fff; }
+.site-title   { margin: 10px 20px 0 15px; font-family: 'Bangers', cursive; font-size: 30px; color: #fff; }
+.site-title a { color: #fff; border: none; }

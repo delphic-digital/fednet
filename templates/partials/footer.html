@@ -1,1 +1,8 @@
-This is footer content
+{% for nav in navs.footer %}
+{% set is_current = (nav_path == nav.path) %}
+	{% if nav.file %}
+			<a {{ "class='current'" if is_current }} href="{{nav_path|relativePath(nav.path)}}">{{nav.file.title}}</a>
+	{% else %}
+			{{nav.name}}
+	{% endif %}
+{% endfor %}
