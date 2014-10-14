@@ -1,6 +1,6 @@
 ---
 title: Snippets
-template: page.html
+template: list-page.html
 nav_sort: 4
 nav_groups:
   - primary

@@ -4,7 +4,7 @@ nav#main-nav {
 	border-bottom: 1px dashed #666666;
 	a {
 		display: block;
-		padding: 8px 10px;
+		padding: 8px 15px;
 		color: #fff;
 		border: none;
 	}
@@ -18,7 +18,7 @@ nav#main-nav {
 		background: -o-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0) 8px),-o-linear-gradient(bottom, rgba(0,0,0,0.2), rgba(0,0,0,0) 8px),-o-linear-gradient(top, #000, rgba(0,0,0,0) 1.5px),-o-linear-gradient(bottom, #939393, rgba(147,147,147,0) 1.5px),#262626;
 		background: linear-gradient(top, rgba(0,0,0,0.2),rgba(0,0,0,0) 8px),linear-gradient(bottom, rgba(0,0,0,0.2),rgba(0,0,0,0) 8px),linear-gradient(top, #000000,rgba(0,0,0,0) 1.5px),linear-gradient(bottom, #939393,rgba(147,147,147,0) 1.5px),#262626;
 	}
-	ul ul a { padding-left: 20px; font-weight: 400; }
+	ul ul a { padding-left: 25px; font-weight: 400; }
 
 	li.current > a {
 		box-shadow: 0px 1px 0px black;
