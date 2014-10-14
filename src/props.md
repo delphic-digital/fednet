@@ -6,4 +6,4 @@ nav_groups:
   - footer
 ---
 
- Thanks to [Metalsmith](http://www.metalsmith.io/) for the site builder and [Github](http://www.github.com/) for hosting.
+ Thanks to [Metalsmith](http://www.metalsmith.io/) for the site builder and [Github](http://www.github.com/) for hosting and travis.
