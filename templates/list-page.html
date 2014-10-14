@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1>{{title}}</h1>
+	{{contents}}
+	<p>
+		{% for nav in navs.primary %}
+			{% set is_current = (nav_path == nav.path) %}
+
+			{% if is_current %}
+				<ul>
+				{% for child in nav.children %}
+					<li><a href="{{nav_path|relativePath(child.path)}}">{{child.file.title}}</a></li>
+				{% endfor %}
+				</ul>
+			{% endif %}
+		{% endfor %}
+	</p>
+{% endblock %}
