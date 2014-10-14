@@ -1,14 +1,14 @@
 <html>
 	<head>
 		<title>{{title}} | {{siteTitle}}</title>
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="{{nav_path|relativePath('css/main.css')}}">
 	</head>
 	<body>
 		
 		<aside id="primary-sidebar">
-			<div class="site-title">{{siteTitle}}</div>
+			<div class="site-title"><a href="/">{{siteTitle}}</a></div>
 			<nav id="main-nav">
 				{% include "partials/nav.html" %}
 			</nav>

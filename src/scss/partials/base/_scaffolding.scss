@@ -8,15 +8,15 @@ body {
   margin: 0;
 }
 
-body { display: flex; flex-direction: row; background: #fefdf8; }
+body { display: flex; flex-direction: row; background: #eaf2f6; }
 
 section#main-content
 {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	padding: 0 25px; 
+	
 }
-aside#primary-sidebar { padding: 10px; background: #01a0e4;}
-main { flex: 1;   } 
+aside#primary-sidebar { padding: 10px 0; background: #393939;}
+main { flex: 1; padding: 0 25px;   } 
 nav  {  }

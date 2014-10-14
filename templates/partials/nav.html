@@ -1,7 +1,7 @@
-
 <ul>
 	{% for nav in navs.primary %}
-	<li>
+	{% set is_current = (nav_path == nav.path) %}
+	<li {{ "class='current'" if is_current }}>
 		{% if nav.file %}
 				<a href="{{nav_path|relativePath(nav.path)}}">{{nav.file.title}}</a>
 		{% else %}
@@ -11,7 +11,8 @@
 		{% if nav.children|length %}
 			<ul>
 					{% for child in nav.children %}
-					<li>
+					{% set is_current = (nav_path == child.path) %}
+					<li {{ "class='current'" if is_current }}>
 						{% if child.file %}
 							<a href="{{nav_path|relativePath(child.path)}}">{{child.file.title}}</a>
 						{% else %}

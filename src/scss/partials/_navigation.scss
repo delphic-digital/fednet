@@ -1,5 +1,15 @@
 nav#main-nav {
-	a { color: #fff; }
+	font-weight: 700;
+	a { 
+		display: block; 
+		padding: 5px 10px; 
+		color: #fff; 
+	}
 	ul { margin: 0; padding: 0; list-style-type: none; }
-	ul ul { margin-left: 10px;}
+	ul ul a { padding-left: 20px;}
+
+	li.current > a {
+		box-shadow: 0px 1px 0px black;
+		background-color: #2467af;
+	}
 }
