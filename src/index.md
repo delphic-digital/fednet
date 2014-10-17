@@ -6,6 +6,8 @@ nav_groups:
   - primary
 ---
 
+New homepage content.
+
 Welcome to Underware. This is a front end developer knowledge base mainly for [Delphic Digital](http://www.delphicdigital.com).
 
 Game on!
