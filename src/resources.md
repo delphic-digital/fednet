@@ -1,7 +1,7 @@
 ---
 title: Resources
 template: page.html
-nav_sort: 5
+nav_sort: 6
 nav_groups:
   - primary
 ---

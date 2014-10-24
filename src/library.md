@@ -1,7 +1,7 @@
 ---
 title: Library
 template: list-page.html
-nav_sort: 3
+nav_sort: 4
 nav_groups:
   - primary
 ---

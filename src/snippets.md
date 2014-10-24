@@ -1,7 +1,7 @@
 ---
 title: Snippets
 template: list-page.html
-nav_sort: 4
+nav_sort: 5
 nav_groups:
   - primary
 ---
