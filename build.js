@@ -58,8 +58,8 @@ var templatesTask = templates({
 });
 
 var meta = {
-    siteTitle: 'Underware',
-    description: 'Front end developer knowledge base.',
+    siteTitle: 'fednet',
+    description: 'Front end developer knowledge.',
 };
 
 
