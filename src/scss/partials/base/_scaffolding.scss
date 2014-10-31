@@ -26,8 +26,10 @@ section#main-content {
 
 }
 aside#primary-sidebar { padding: 10px 0; background: #393939;}
+
 main {
 	flex: 1;
+	overflow: auto;
 	-webkit-flex: 1;
 	padding: 0 25px;
 }
