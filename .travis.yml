@@ -8,7 +8,7 @@ script:
   - node build
 env:
   global:
-  - GH_REF: github.com/jefftherobot/underware.git
+  - GH_REF: github.com/delphic-digital/fednet.git
   - secure: KbU6aVv7xteRYOo3sn/wO0dAzxyFo0p7UH3JzoHBxCWLGmVMHGEjaPcydERhy6z0tWsr468LqEXxFS4IGulragFn72xnLf5dYsWxqdlovAHPHj0I1OVYEDppZvSvFV36CPAYFRY0vgLfPW3UfcY1v4lqXN5KaBUfAzJRdlYg0hg=
 after_success:
   - chmod +x ./deploy-ghpages.sh
