@@ -7,6 +7,7 @@ var markDown    = require('metalsmith-markdown');
 var sass        = require('metalsmith-ruby-sass');
 var templates   = require('metalsmith-templates');
 var navigation  = require('metalsmith-navigation');
+var metallic    = require('metalsmith-metallic');
 var watch       = require('metalsmith-watch');
 
 
@@ -37,6 +38,8 @@ var relativePathHelper = function(current, target) {
 var navTask = navigation(navConfigs);
 
 var markDownTask = markDown();
+var metallicTask = metallic();
+
 var watchTask = watch({
     pattern : ['**/*', '../templates/**/*'],
     livereload: true
@@ -68,6 +71,7 @@ var metalsmith = metalsmith(__dirname)
     .clean(true)
     .metadata(meta)
     .use(markDownTask)
+    .use(metallicTask)
     .use(sassTask)
     .use(navTask)
     .use(templatesTask)

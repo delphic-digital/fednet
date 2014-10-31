@@ -3,6 +3,7 @@
 		<title>{{title}} | {{siteTitle}}</title>
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/zenburn.min.css">
 		<link rel="stylesheet" type="text/css" href="{{nav_path|relativePath('css/main.css')}}">
 	</head>
 	<body>
@@ -25,6 +26,7 @@
 				{% include "partials/footer.html" %}
 			</footer>
 		</section>
-
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
 	</body>
 </html>
