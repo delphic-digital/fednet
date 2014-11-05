@@ -8,6 +8,6 @@ nav_groups:
 
 New homepage content.
 
-Welcome to Underware. This is a front end developer knowledge base.
+Welcome to fednet. This is a front end developer knowledge base.
 
 Game on!
