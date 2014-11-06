@@ -12,6 +12,11 @@ External resources.
 * [Markdown Syntax](http://daringfireball.net/projects/markdown/syntax)
 * [codrops](http://tympanus.net/codrops/category/playground/)
 
+General
+-------------------------
+
+* [A Baseline for Front-End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
+
 JS library related
 -------------------------
 

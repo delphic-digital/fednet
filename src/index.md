@@ -6,7 +6,6 @@ nav_groups:
   - primary
 ---
 
-New homepage content.
 
 Welcome to fednet. This is a front end developer knowledge base.
 
