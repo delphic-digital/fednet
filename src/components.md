@@ -1,9 +1,9 @@
 ---
-title: Library
+title: Components
 template: list-page.html
 nav_sort: 4
 nav_groups:
   - primary
 ---
 
-Collection of Delphic modules.
+Collection of Delphic components.
