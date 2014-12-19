@@ -1,4 +1,5 @@
 ---
+lunr: true
 title: delphic.inject
 page_description: On demand JavaScript loader that doesn't block.
 template: page.html

@@ -1,4 +1,5 @@
 ---
+lunr: true
 title: Sass social bar
 author: jeff
 template: page.html

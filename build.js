@@ -10,6 +10,7 @@ var navigation  = require('metalsmith-navigation');
 var metallic    = require('metalsmith-metallic');
 var assets      = require('metalsmith-assets');
 var watch       = require('metalsmith-watch');
+var lunr        = require('metalsmith-lunr');
 
 
 var navTask = navigation(navConfigs);
@@ -75,6 +76,13 @@ var meta = {
     description: 'Front end developer knowledge.',
 };
 
+var lunrTask = lunr({
+  ref: 'title',
+  fields: {
+      contents: 1
+  }
+})
+
 
 
 var metalsmith = metalsmith(__dirname)
@@ -86,6 +94,7 @@ var metalsmith = metalsmith(__dirname)
     .use(navTask)
     .use(templatesTask)
     .use(assetsTask)
+    .use(lunrTask)
     //.use(watchTask)
     .build(function(err) {
         if (err) throw err;
