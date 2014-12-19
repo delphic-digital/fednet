@@ -1,21 +1,23 @@
 {% extends "base.html" %}
 
 {% block content %}
-	<h1>{{title}}</h1>
+	<div class="meta">
+		<h1>{{title}}</h1>
 
-	{% if description %}
-		<div class="description">{{page_description}}</div>
-	{% endif %}
+		{% if description %}
+			<div class="meta__description">{{page_description}}</div>
+		{% endif %}
 
-	{% if version %}
-		<div class="version">Current version is {{component_version}}</div>
-	{% endif %}
+		{% if component_version %}
+			<div class="meta__version">Current version is {{component_version}}</div>
+		{% endif %}
 
-	{% if download_path %}
-		<div class="download-button">
-			<a href="{{download_path}}">Download on github</a>
-		</div>
-	{% endif %}
+		{% if download_path %}
+			<div class="meta__download">
+				<a class="btn btn--primary" href="{{download_path}}">Download on github</a>
+			</div>
+		{% endif %}
+	</div>
 
 	{{contents}}
 {% endblock %}
