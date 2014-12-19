@@ -8,9 +8,12 @@
 			{% set is_current = (nav_path == nav.path) %}
 
 			{% if is_current %}
-				<ul>
+				<ul class="list-page-toc">
 				{% for child in nav.children %}
-					<li><a href="{{nav_path|relativePath(child.path)}}">{{child.file.title}}</a></li>
+					<li>
+						<a href="{{nav_path|relativePath(child.path)}}">{{child.file.title}}</a>
+						{% if child.file.author %} <span class="list-page-toc__author">By {{child.file.author}}</span>{% endif %}
+					</li>
 				{% endfor %}
 				</ul>
 			{% endif %}

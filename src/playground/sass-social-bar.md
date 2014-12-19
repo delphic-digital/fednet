@@ -1,5 +1,6 @@
 ---
 title: Sass social bar
+author: jeff
 template: page.html
 nav_groups:
   - list_page
