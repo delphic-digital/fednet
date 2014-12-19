@@ -1,23 +1,16 @@
 ---
 title: delphic.inject
+page_description: On demand JavaScript loader that doesn't block.
 template: page.html
 nav_sort: 1
 nav_groups:
   - primary
+  - list_page
+download_path: https://github.com/delphic-digital/delphic.inject
+component_version: 1.0.1
 ---
 
-* [Github](https://github.com/delphic-digital/delphic.inject).
-
-
-On demand JavaScript loader that doesn't block.
-
-## Features
-
-* [LABjs](http://labjs.com/) performance script loader ( *the* best!).
-* Custom wrapper and config object to make life easier.
-
-
-## How to use
+## Documentation
 
 Include `LAB.min.js` and `delphic.inject.js` in that order on your page.
 

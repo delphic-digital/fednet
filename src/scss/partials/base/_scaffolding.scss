@@ -3,42 +3,26 @@ html { box-sizing: border-box; }
 
 html,
 body {
-  width: 100%;
-  height: 100%;
   margin: 0;
 }
 
-body {
+.page {
 	display: flex;
-	display: -webkit-flexbox;
-	flex-direction: row;
-	-webkit-flex-direction: row;
-	background: #eaf2f6;
-}
-
-section#main-content {
-	display: flex;
-	display: -webkit-flexbox;
 	flex-direction: column;
-	-webkit-flex-direction: column;
-	flex: 1;
-	-webkit-flex: 1;
-
+  min-height: 100%;
+  background: #fdfdfd;
+  border-top: 1px solid #a1b56c;
 }
-aside#primary-sidebar { padding: 10px 0; background: #393939;}
 
 main {
-	flex: 1;
-	overflow: auto;
-	-webkit-flex: 1;
-	padding: 0 25px;
+	display: flex;
+	flex-direction: row;
+	flex: 1 0 auto;
+  margin: 0 auto;
+  padding: 1.5em;
+  width: 100%;
+  max-width: 70rem;
 }
-nav  {  }
 
-footer {
-	padding: 5px;
-	text-align: center;
-	background: #DCE2E6;
-	border-top: 1px solid #D9DBDB;
-	a { border: none;}
-}
+main aside   { flex: 0 0 auto; padding: 0 120px 0 0;}
+main article { flex: 1}

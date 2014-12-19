@@ -1,27 +1,31 @@
-html {
-  font-size: 13px;
+.page {
+	font-family: Roboto, sans-serif;
+  font-size: 15px;
+  color: #666;
+  line-height: 1.4;
 }
 
 
-body { font-family: "PT Sans", sans-serif;  color: #354a57; }
-a    { text-decoration: none; color: #445E6E; border-bottom: 1px dotted #445E6E;  }
+
+
+a       { text-decoration: none; color: #445E6E; border-bottom: 1px dotted #445E6E;  }
 a:hover { border: none;}
 
-//Headings
 
 h1 {
-	margin: 10px 0;
-	font-size: 35px;
-	border-top: 4px solid #354a57;
+	margin: 0 0 20px;
+	font-size: 2.5rem;
+	line-height: 1;
+	font-weight: 400;
+	color: #000;
 }
 
 h2 {
-	margin: 10px 0;
+	margin: 45px 0 10px;
 	font-size: 20px;
-	border-top: 2px solid #354a57;
+	font-weight: 400;
+	color: #000;
 }
 
-main { /* text-shadow: 0px 1px 0px white; */}
-
-.site-title   { margin: 10px 20px 0 15px; font-family: 'Bangers', cursive; font-size: 30px; color: #fff; }
-.site-title a { color: #fff; border: none; }
+pre { margin: 30px 0; border-top: 1px solid #999; font-family: 'Cousine'; }
+code { padding: 15px !important; font-family: 'Cousine'; font-size: 12px;  }

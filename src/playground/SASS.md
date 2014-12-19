@@ -1,9 +1,8 @@
 ---
-title: SASS
+title: Sass social bar
 template: page.html
-nav_sort: 3
 nav_groups:
-  - primary
+  - list_page
 ---
 
 Sass snippets we have created for various projects.

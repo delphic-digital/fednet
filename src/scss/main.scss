@@ -1,5 +1,8 @@
 @import "partials/base/normalize";
-@import "partials/base/typography";
 @import "partials/base/scaffolding";
+@import "partials/base/typography";
 
-@import "partials/navigation";
+@import "partials/layout/header";
+@import "partials/layout/footer";
+@import "partials/components/sidebar";
+@import "partials/components/navigation";

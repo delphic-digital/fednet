@@ -1,31 +1,39 @@
 <html>
 	<head>
 		<title>{{title}} | {{siteTitle}}</title>
-		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/zenburn.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,700italic,400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Cousine:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/atelier-heath.light.min.css">
 		<link rel="stylesheet" type="text/css" href="{{nav_path|relativePath('css/main.css')}}">
 	</head>
-	<body>
+	<body class="page">
+		<header class="header">
+			{% include "partials/header.html" %}
+		</header>
 
-		<aside id="primary-sidebar">
-			<div class="site-title"><a href="{{nav_path|relativePath('index.html')}}">{{siteTitle}}</a></div>
-			<nav id="main-nav">
-				{% include "partials/nav.html" %}
-			</nav>
-		</aside>
+		<main>
 
-		<section id="main-content">
-			<main>
+			<aside class="sidebar">
+				<div class="sidebar__site-title">
+					<a href="{{nav_path|relativePath('index.html')}}">{{siteTitle}}</a>
+				</div>
+				<nav class="sidebar__nav">
+					{% include "partials/nav.html" %}
+				</nav>
+			</aside>
+
+			<article>
 				{% block content %}
 					<p>{{siteDescription}}</p>
 				{% endblock %}
-			</main>
+			</article>
+		</main>
 
-			<footer>
-				{% include "partials/footer.html" %}
-			</footer>
-		</section>
+		<footer class="footer">
+			{% include "partials/footer.html" %}
+		</footer>
+
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 		<script>hljs.initHighlightingOnLoad();</script>
 	</body>

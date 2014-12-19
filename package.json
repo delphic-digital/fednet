@@ -6,6 +6,7 @@
   "author": "Jeff Mills",
   "devDependencies": {
     "metalsmith": "^1.0.1",
+    "metalsmith-assets": "^0.1.0",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-metallic": "^0.2.0",
     "metalsmith-navigation": "^0.0.7",

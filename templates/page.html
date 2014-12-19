@@ -2,5 +2,20 @@
 
 {% block content %}
 	<h1>{{title}}</h1>
+
+	{% if description %}
+		<div class="description">{{page_description}}</div>
+	{% endif %}
+
+	{% if version %}
+		<div class="version">Current version is {{component_version}}</div>
+	{% endif %}
+
+	{% if download_path %}
+		<div class="download-button">
+			<a href="{{download_path}}">Download on github</a>
+		</div>
+	{% endif %}
+
 	{{contents}}
 {% endblock %}

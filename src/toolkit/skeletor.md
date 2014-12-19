@@ -1,14 +1,16 @@
 ---
 title: Skeletor
+page_description: Skeletor is a mobile first Front End Developer boilerplate.
 template: page.html
 nav_sort: 2
 nav_groups:
   - primary
+  - list_page
+download_path: https://github.com/delphic-digital/Skeletor
+component_version: 1.0.1
 ---
 
-Skeletor is a mobile first Front End Developer boilerplate. It's designed to be as flexible with designs as possible, so the main goal was to not lock the developer into a grid or template system. It provides organization through a file structure standard and process tools.
-
-Get it here on Github: [Skeletor](https://github.com/delphic-digital/Skeletor).
+Skeletor is designed to be as flexible with designs as possible, so the main goal was to not lock the developer into a grid or template system. It provides organization through a file structure standard and process tools.
 
 ## Features
 

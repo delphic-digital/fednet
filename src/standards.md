@@ -3,7 +3,7 @@ title: Standards
 template: list-page.html
 nav_sort: 2
 nav_groups:
-  - primary
+  - none
 ---
 
 Front end development standards.

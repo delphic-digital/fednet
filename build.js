@@ -8,6 +8,7 @@ var sass        = require('metalsmith-ruby-sass');
 var templates   = require('metalsmith-templates');
 var navigation  = require('metalsmith-navigation');
 var metallic    = require('metalsmith-metallic');
+var assets      = require('metalsmith-assets');
 var watch       = require('metalsmith-watch');
 
 
@@ -15,6 +16,10 @@ var navTask = navigation(navConfigs);
 
 var navConfigs = {
     primary:{
+        sortBy: 'nav_sort',
+        filterProperty: 'nav_groups',
+    },
+    list_page:{
         sortBy: 'nav_sort',
         filterProperty: 'nav_groups',
     },
@@ -60,6 +65,11 @@ var templatesTask = templates({
     }
 });
 
+var assetsTask = assets({
+  source: './assets', // relative to the working directory
+  destination: './assets' // relative to the build directory
+})
+
 var meta = {
     siteTitle: 'fednet',
     description: 'Front end developer knowledge.',
@@ -75,7 +85,8 @@ var metalsmith = metalsmith(__dirname)
     .use(sassTask)
     .use(navTask)
     .use(templatesTask)
-   //.use(watchTask)
+    .use(assetsTask)
+    //.use(watchTask)
     .build(function(err) {
         if (err) throw err;
     });

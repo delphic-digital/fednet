@@ -1,0 +1,21 @@
+.header {
+	display: none;
+	position: relative;
+	padding: 1.5em;
+	min-height: 50px;
+	background: #f8f8f8;
+
+
+	&__site-title   { margin: 0 0 0 40px; font-family: 'Droid Sans Mono'; }
+	&__site-title a { border: none; }
+
+	&__cable {
+		position: absolute;
+		max-width: 59px;
+		bottom: -1px;
+		left: 18px;
+		opacity: .04;
+
+		img { width: 100%; height: auto;}
+	}
+}
