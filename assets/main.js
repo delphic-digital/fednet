@@ -64,7 +64,7 @@
 					        .append('<div class="search-results__link-text">'+basePath+result.ref+'</div>')
 					        .append('<div class="search-results__excerpt">'+store[result.ref].excerpt+'</div>')
 							return el;
-						}) : $('<div class="search-result__item"><strong>No results found</strong></div>')
+						}) : $('<div class="search-results__item"><strong>No results found</strong></div>')
 					);
 		});
 	})
