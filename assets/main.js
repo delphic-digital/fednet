@@ -61,7 +61,7 @@
 							    .append($('<a class="search-results__title">')
 							    	      .attr('href', basePath+result.ref)
 							    	      .text(store[result.ref].title))
-					        .append('<div class="search-results__link-text">'+basePath+result.ref+'</div>')
+					        .append('<div class="search-results__link-text">'+result.ref+'</div>')
 					        .append('<div class="search-results__excerpt">'+store[result.ref].excerpt+'</div>')
 							return el;
 						}) : $('<div class="search-results__item"><strong>No results found</strong></div>')
