@@ -1,4 +1,5 @@
 ---
+lunr: true
 title: Resources
 template: page.html
 nav_sort: 6

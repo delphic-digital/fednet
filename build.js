@@ -7,6 +7,7 @@ var markDown    = require('metalsmith-markdown');
 var sass        = require('metalsmith-ruby-sass');
 var templates   = require('metalsmith-templates');
 var navigation  = require('metalsmith-navigation');
+var excerpts    = require('metalsmith-excerpts');
 var metallic    = require('metalsmith-metallic');
 var assets      = require('metalsmith-assets');
 var watch       = require('metalsmith-watch');
@@ -38,13 +39,29 @@ var relativePathHelper = function(current, target) {
     current = path.normalize(current).slice(0);
     target = path.normalize(target).slice(0);
     current = path.dirname(current);
-    return path.relative(current, target);
+    var relative = path.relative(current, target);
+    relative = relative.replace(/\\/g,"/");
+    return relative;
+};
+
+var indexPathHelper = function(current, target) {
+    // normalize and remove starting slash from path
+    if(!current || !target){
+        return '';
+    }
+    current = path.normalize(current).slice(0);
+    target = path.normalize(target).slice(0);
+    current = path.dirname(current);
+    var index = path.relative(current, target);
+    index = index.replace(/\\/g,"/");
+    return path.dirname(index)+'/';
 };
 
 var navTask = navigation(navConfigs);
 
 var markDownTask = markDown();
 var metallicTask = metallic();
+var excerptsTask = excerpts();
 
 var watchTask = watch({
     pattern : ['**/*', '../templates/**/*'],
@@ -61,7 +78,8 @@ var templatesTask = templates({
     settings:  {
         views: 'templates',
         filters: {
-            'relativePath': relativePathHelper
+            'relativePath': relativePathHelper,
+            'indexPath': indexPathHelper
         }
     }
 });
@@ -77,9 +95,15 @@ var meta = {
 };
 
 var lunrTask = lunr({
-  ref: 'title',
+ // ref: 'title',
   fields: {
-      contents: 1
+      title: 1,
+      contents: 10
+  },
+  store: ['title', 'excerpt', 'nav_path'],
+  preprocess: function(content) {
+    //Strip html tags
+    return content.replace(/(<([^>]+)>)/ig,"");
   }
 })
 
@@ -89,6 +113,7 @@ var metalsmith = metalsmith(__dirname)
     .clean(true)
     .metadata(meta)
     .use(markDownTask)
+    .use(excerptsTask)
     .use(metallicTask)
     .use(sassTask)
     .use(navTask)

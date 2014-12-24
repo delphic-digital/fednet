@@ -1,4 +1,5 @@
 ---
+lunr: true
 title: delphic.gatracking
 page_description: A plugin for firing Google Analytics Events.
 template: page.html

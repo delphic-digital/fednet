@@ -1,4 +1,5 @@
 ---
+lunr: true
 title: Mad Props
 template: page.html
 nav_sort: 1

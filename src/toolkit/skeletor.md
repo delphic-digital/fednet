@@ -1,4 +1,5 @@
 ---
+lunr: true
 title: Skeletor
 page_description: Skeletor is a mobile first Front End Developer boilerplate.
 template: page.html

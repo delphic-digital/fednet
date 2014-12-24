@@ -1,4 +1,5 @@
 ---
+lunr: true
 title: Get Started
 template: list-page.html
 nav_sort: 1

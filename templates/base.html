@@ -18,12 +18,15 @@
 				<div class="sidebar__site-title">
 					<a href="{{nav_path|relativePath('index.html')}}">{{siteTitle}}</a>
 				</div>
+
+				{% include "partials/search.html" %}
+
 				<nav class="sidebar__nav">
 					{% include "partials/nav.html" %}
 				</nav>
 			</aside>
 
-			<article>
+			<article class="content">
 				{% block content %}
 					<p>{{siteDescription}}</p>
 				{% endblock %}
@@ -34,8 +37,12 @@
 			{% include "partials/footer.html" %}
 		</footer>
 
+		<script>
+			var basePath = "{{nav_path|indexPath('index.html')}}";
+		</script>
+
 		<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/0.5.6/lunr.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/0.5.7/lunr.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
 		<script src="{{nav_path|relativePath('assets/main.js')}}"></script>
 	</body>

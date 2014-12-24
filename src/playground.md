@@ -1,4 +1,5 @@
 ---
+lunr: true
 title: Playground
 template: list-page.html
 nav_sort: 5

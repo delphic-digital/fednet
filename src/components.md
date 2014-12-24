@@ -1,4 +1,5 @@
 ---
+lunr: true
 title: Components
 template: list-page.html
 nav_sort: 4

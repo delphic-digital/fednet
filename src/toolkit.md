@@ -1,4 +1,5 @@
 ---
+lunr: true
 title: Toolkit
 template: list-page.html
 nav_sort: 3

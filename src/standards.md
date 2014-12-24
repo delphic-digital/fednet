@@ -1,4 +1,5 @@
 ---
+lunr: true
 title: Standards
 template: list-page.html
 nav_sort: 2
