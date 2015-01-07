@@ -8,7 +8,7 @@ nav_groups:
 ---
 
 
-Mobile Naviation - Toggle
+Mobile Navigation - Toggle
 -------------------------
 
 Mobile navigation that uses "js-" prefixed classes for toggling behavior.
