@@ -11,7 +11,10 @@
 	}
 }
 
-.list-page-toc__author { font-size: .7rem;}
+.list-page-toc {
+	&__author    { font-size: .7rem;}
+	&__excerpt p { margin-top: 0; font-style: italic; }
+}
 
 .search-results {
 	&__back {

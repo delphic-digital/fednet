@@ -1,7 +1,7 @@
 ---
 lunr: true
 title: Playground
-template: list-page.html
+template: blog-page.html
 nav_sort: 5
 nav_groups:
   - primary

@@ -13,6 +13,7 @@
 					<li>
 						<a href="{{nav_path|relativePath(child.path)}}">{{child.file.title}}</a>
 						{% if child.file.author %} <span class="list-page-toc__author">By {{child.file.author}}</span>{% endif %}
+						{% if child.file.excerpt %} <div class="list-page-toc__excerpt">{{child.file.excerpt}}</div>{% endif %}
 					</li>
 				{% endfor %}
 				</ul>
