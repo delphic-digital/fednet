@@ -17,6 +17,7 @@ General
 -------------------------
 
 * [A Baseline for Front-End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
+* [The Anti-Captcha Challenge](http://blog.fili.nl/the-anti-captcha-challenge/)
 
 JS library related
 -------------------------
