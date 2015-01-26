@@ -1,0 +1,176 @@
+<html>
+	<head>
+		<title>delphic.ace | fednet</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,700italic,400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Cousine:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/atelier-heath.light.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+	</head>
+	<body class="page">
+		<header class="header">
+			<div class="header__site-title">
+	<a href="../index.html">fednet</a>
+</div>
+
+<div class="header__cable">
+	<img src="../assets/cable.svg">
+</div>
+		</header>
+
+		<main>
+
+			<aside class="sidebar">
+				<div class="sidebar__site-title">
+					<a href="../index.html">fednet</a>
+				</div>
+
+				<div class="site-search">
+	<input type="text" class="site-search__input" placeholder="search">
+</div>
+
+				<nav class="sidebar__nav">
+					<ul>
+	
+	
+	<li >
+		
+				<a href="../index.html">Get Started</a>
+		
+
+		
+			</li>
+	
+	
+	<li >
+		
+				<a href="../toolkit.html">Toolkit</a>
+		
+
+		
+			<ul>
+					
+					
+					<li >
+						
+							<a href="../toolkit/skeletor.html">Skeletor</a>
+						
+						</li>
+					
+			</ul>
+			
+			</li>
+	
+	
+	<li >
+		
+				<a href="../components.html">Components</a>
+		
+
+		
+			<ul>
+					
+					
+					<li >
+						
+							<a href="delphic.inject.html">delphic.inject</a>
+						
+						</li>
+					
+					
+					<li class='current'>
+						
+							<a href="delphic.ace.html">delphic.ace</a>
+						
+						</li>
+					
+			</ul>
+			
+			</li>
+	
+	
+	<li >
+		
+				<a href="../playground.html">Playground</a>
+		
+
+		
+			</li>
+	
+	
+	<li >
+		
+				<a href="../resources.html">Resources</a>
+		
+
+		
+			</li>
+	
+</ul>
+				</nav>
+			</aside>
+
+			<article class="content">
+				
+	<div class="meta">
+		<h1>delphic.ace</h1>
+
+		
+			<div class="meta__description">A plugin for firing Google Analytics Events.</div>
+		
+
+		
+			<div class="meta__version">Current version is 2.0.0</div>
+		
+
+		
+			<div class="meta__download">
+				<a class="btn btn--primary" href="https://github.com/delphic-digital/delphic.ace">Download on github</a>
+			</div>
+		
+	</div>
+
+	<h2 id="documentation">documentation</h2>
+<p>Include delphic.ace.js after including jQuery/Zepto.</p>
+<pre><code class="lang-html">&lt;script src=&quot;delphic.ace.js&quot;&gt; &lt;/script&gt;
+</code></pre>
+<p>Initialize:</p>
+<pre><code class="lang-html">&lt;script&gt;
+    $.ace();
+&lt;/script&gt;
+</code></pre>
+<h2 id="usage-">Usage:</h2>
+<p>Add a <em>data-delphic-event</em> attribute to the link you want to track.
+Possible values: <code>data-track-event=&quot;category, action, label, value, noninteraction&quot;</code></p>
+<p>Only category and action values are required.</p>
+<pre><code class="lang-html">&lt;a href=&quot;http://www.hackaday.com&quot; data-delphic-event=&quot;External Link, Click, Exited site with external link&quot;&gt;HACKADAY&lt;/a&gt;
+</code></pre>
+<h3 id="why-ace-">Why ace?</h3>
+<p>Because <a href="http://www.comicvine.com/ace-the-bat-hound/4005-31302/">Ace the Bat-Hound</a> is good at tracking.</p>
+<p><img src="http://static.comicvine.com/uploads/scale_small/1/14487/1288836-ace.jpg" alt="Ace the Bat-Hound"></p>
+
+
+			</article>
+		</main>
+
+		<footer class="footer">
+			
+Part of <a href="http://www.delphicdigital.com">Delphic Digital's</a> Underware.&nbsp;&nbsp;
+
+	
+	
+			<a  href="../props.html">Mad Props</a>
+	
+
+		</footer>
+
+		<script>
+			var basePath = "../";
+		</script>
+
+		<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/0.5.7/lunr.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+		<script src="../assets/main.js"></script>
+	</body>
+</html>

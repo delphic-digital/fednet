@@ -1,0 +1,188 @@
+<html>
+	<head>
+		<title>delphic.inject | fednet</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,700italic,400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Cousine:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/atelier-heath.light.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+	</head>
+	<body class="page">
+		<header class="header">
+			<div class="header__site-title">
+	<a href="../index.html">fednet</a>
+</div>
+
+<div class="header__cable">
+	<img src="../assets/cable.svg">
+</div>
+		</header>
+
+		<main>
+
+			<aside class="sidebar">
+				<div class="sidebar__site-title">
+					<a href="../index.html">fednet</a>
+				</div>
+
+				<div class="site-search">
+	<input type="text" class="site-search__input" placeholder="search">
+</div>
+
+				<nav class="sidebar__nav">
+					<ul>
+	
+	
+	<li >
+		
+				<a href="../index.html">Get Started</a>
+		
+
+		
+			</li>
+	
+	
+	<li >
+		
+				<a href="../toolkit.html">Toolkit</a>
+		
+
+		
+			<ul>
+					
+					
+					<li >
+						
+							<a href="../toolkit/skeletor.html">Skeletor</a>
+						
+						</li>
+					
+			</ul>
+			
+			</li>
+	
+	
+	<li >
+		
+				<a href="../components.html">Components</a>
+		
+
+		
+			<ul>
+					
+					
+					<li class='current'>
+						
+							<a href="delphic.inject.html">delphic.inject</a>
+						
+						</li>
+					
+					
+					<li >
+						
+							<a href="delphic.ace.html">delphic.ace</a>
+						
+						</li>
+					
+			</ul>
+			
+			</li>
+	
+	
+	<li >
+		
+				<a href="../playground.html">Playground</a>
+		
+
+		
+			</li>
+	
+	
+	<li >
+		
+				<a href="../resources.html">Resources</a>
+		
+
+		
+			</li>
+	
+</ul>
+				</nav>
+			</aside>
+
+			<article class="content">
+				
+	<div class="meta">
+		<h1>delphic.inject</h1>
+
+		
+			<div class="meta__description">On demand JavaScript loader that doesn't block.</div>
+		
+
+		
+			<div class="meta__version">Current version is 1.0.1</div>
+		
+
+		
+			<div class="meta__download">
+				<a class="btn btn--primary" href="https://github.com/delphic-digital/delphic.inject">Download on github</a>
+			</div>
+		
+	</div>
+
+	<h2 id="documentation">Documentation</h2>
+<p>Include <code>LAB.min.js</code> and <code>delphic.inject.js</code> in that order on your page.</p>
+<p>Config example:</p>
+<pre><code class="lang-Javascript">var LABconfig = {
+    paths: {
+        &#39;jquery&#39;             : &#39;http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js&#39;,
+        &#39;myCss&#39;              : &#39;/css/plugins/my.css&#39;,
+        &#39;jquery.easing&#39;      : &#39;http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js&#39;
+    },
+    shortcuts: {
+        &#39;jqueryWithEasing&#39; : [&#39;jquery&#39;,&#39;jquery.easing&#39;]
+    }
+}
+</code></pre>
+<ul>
+<li>Use <code>paths</code> to declare where your JavaScript or CSS files should be loaded from. Can be any url, absolute or relative.</li>
+<li>Use <code>shortcuts</code> to declare dependecies with an array of <code>paths</code>. Order of array elements determines the order of load.</li>
+</ul>
+<p>When you need to use a JavaScript file, you use the defined path or shortcut variable from the config.</p>
+<p>To use a path, pass an array of path variables:</p>
+<pre><code class="lang-Javascript">DELPHIC.inject([&#39;jquery&#39;, &#39;jquery.easing&#39;],function(){
+    //Both jquery and jquery.easing have finished loading
+})
+</code></pre>
+<p>Or, pass a shorcut variable as a string:</p>
+<pre><code class="lang-Javascript">DELPHIC.inject(&#39;jqueryWithEasing&#39;,function(){
+    //Both jquery and jquery.easing have finished loading
+})
+</code></pre>
+<p>Those two function calls are equivalent.</p>
+
+
+			</article>
+		</main>
+
+		<footer class="footer">
+			
+Part of <a href="http://www.delphicdigital.com">Delphic Digital's</a> Underware.&nbsp;&nbsp;
+
+	
+	
+			<a  href="../props.html">Mad Props</a>
+	
+
+		</footer>
+
+		<script>
+			var basePath = "../";
+		</script>
+
+		<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/0.5.7/lunr.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+		<script src="../assets/main.js"></script>
+	</body>
+</html>

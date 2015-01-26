@@ -1,0 +1,189 @@
+<html>
+	<head>
+		<title>Skeletor | fednet</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,700italic,400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Cousine:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/atelier-heath.light.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+	</head>
+	<body class="page">
+		<header class="header">
+			<div class="header__site-title">
+	<a href="../index.html">fednet</a>
+</div>
+
+<div class="header__cable">
+	<img src="../assets/cable.svg">
+</div>
+		</header>
+
+		<main>
+
+			<aside class="sidebar">
+				<div class="sidebar__site-title">
+					<a href="../index.html">fednet</a>
+				</div>
+
+				<div class="site-search">
+	<input type="text" class="site-search__input" placeholder="search">
+</div>
+
+				<nav class="sidebar__nav">
+					<ul>
+	
+	
+	<li >
+		
+				<a href="../index.html">Get Started</a>
+		
+
+		
+			</li>
+	
+	
+	<li >
+		
+				<a href="../toolkit.html">Toolkit</a>
+		
+
+		
+			<ul>
+					
+					
+					<li class='current'>
+						
+							<a href="skeletor.html">Skeletor</a>
+						
+						</li>
+					
+			</ul>
+			
+			</li>
+	
+	
+	<li >
+		
+				<a href="../components.html">Components</a>
+		
+
+		
+			<ul>
+					
+					
+					<li >
+						
+							<a href="../components/delphic.inject.html">delphic.inject</a>
+						
+						</li>
+					
+					
+					<li >
+						
+							<a href="../components/delphic.ace.html">delphic.ace</a>
+						
+						</li>
+					
+			</ul>
+			
+			</li>
+	
+	
+	<li >
+		
+				<a href="../playground.html">Playground</a>
+		
+
+		
+			</li>
+	
+	
+	<li >
+		
+				<a href="../resources.html">Resources</a>
+		
+
+		
+			</li>
+	
+</ul>
+				</nav>
+			</aside>
+
+			<article class="content">
+				
+	<div class="meta">
+		<h1>Skeletor</h1>
+
+		
+			<div class="meta__description">Skeletor is a mobile first Front End Developer boilerplate.</div>
+		
+
+		
+			<div class="meta__version">Current version is 1.0.1</div>
+		
+
+		
+			<div class="meta__download">
+				<a class="btn btn--primary" href="https://github.com/delphic-digital/Skeletor">Download on github</a>
+			</div>
+		
+	</div>
+
+	<p>Skeletor is designed to be as flexible with designs as possible, so the main goal was to not lock the developer into a grid or template system. It provides organization through a file structure standard and process tools.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Grunt tasks for environment switching</li>
+<li>Sass with handy mixins</li>
+<li><a href="http://zeptojs.com">Zepto.js</a> library with a jQuery fallback.</li>
+<li><a href="https://github.com/JoshBarr/on-media-query">onMediaQuery</a> for responsive JavaScript development.</li>
+<li><a href="https://github.com/getify/LABjs">LABjs (Loading And Blocking JavaScript)</a> performance script loader with <a href="https://github.com/delphic-digital/delphic-jsload">custom Delphic wrapper and config</a>.</li>
+</ul>
+<h2 id="get-started">Get Started</h2>
+<p>Skeletor requires node.js and grunt. So get those.</p>
+<h2 id="javascript">JavaScript</h2>
+<p>These are included by default.</p>
+<ul>
+<li><strong>js/config.js</strong> Configure sites JavaScript plugins paths. Part of <a href="/library/delphic.inject.html">delphic.inject </a>.</li>
+<li><strong>js/main.js</strong> Contains all the site JavaScript application code. ALL JavaScript application code should go into this one file for performance and maintainability.</li>
+<li><strong>js/vendor/LAB.js</strong> <a href="http://labjs.com/">LABjs</a> JS script loader.</li>
+<li><strong>js/vendor/onmediaquery.js</strong> <a href="https://github.com/JoshBarr/on-media-query">onMediaQuery</a> Triggers JS based on media context.</li>
+<li><strong>js/vendor/zepto.js</strong> <a href="http://zeptojs.com">Zepto.js</a> Lightweight jQuery alternative. Execution is a lot faster.</li>
+<li><strong>js/utilities/delphic.inject.js</strong> Wrapper function for LABjs. This is included by default because page specific JavaScripts should be loaded on demand. <a href="/library/delphic.inject.html">Docs</a></li>
+<li><strong>js/plugins/*</strong> Put any page specific scripts in here. There are a couple examples included.</li>
+</ul>
+<h2 id="build-process">Build Process</h2>
+<p>When your site is ready for production, you can run some grunt commands.</p>
+<p>A standard build will:</p>
+<ul>
+<li>Optimize JS by combining and then minify zepto.js, onmediaquery.js, LAB.js,delphic.jsload.js and main.js into one file. Minified JS plugins will also be created in the plugins folder.</li>
+</ul>
+<pre><code>grunt dev
+</code></pre><pre><code>grunt prod
+</code></pre><h2 id="notes">Notes</h2>
+
+
+			</article>
+		</main>
+
+		<footer class="footer">
+			
+Part of <a href="http://www.delphicdigital.com">Delphic Digital's</a> Underware.&nbsp;&nbsp;
+
+	
+	
+			<a  href="../props.html">Mad Props</a>
+	
+
+		</footer>
+
+		<script>
+			var basePath = "../";
+		</script>
+
+		<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/0.5.7/lunr.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+		<script src="../assets/main.js"></script>
+	</body>
+</html>
