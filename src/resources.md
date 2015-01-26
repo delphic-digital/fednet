@@ -26,3 +26,4 @@ JS library related
 * [HTTP Archive: jQuery](http://www.stevesouders.com/blog/2013/03/18/http-archive-jquery/)
 * [jQuery-free JavaScript: 30 mins](https://presentboldly.com/elijahmanor/jquery-free-javascript)
 * [Why We Dropped Zepto by ZURB](http://zurb.com/article/1293/why-we-dropped-zepto)
+* [CSS Animations vs. JavaScript](http://css-tricks.com/myth-busting-css-animations-vs-javascript/)
