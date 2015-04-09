@@ -8,7 +8,7 @@ nav_groups:
   - primary
   - list_page
 download_path: https://github.com/delphic-digital/delphic.ace
-component_version: 2.0.0
+component_version: 3.0.0
 ---
 
 
