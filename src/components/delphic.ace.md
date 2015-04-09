@@ -14,30 +14,44 @@ component_version: 2.0.0
 
 ## documentation
 
-Include delphic.ace.js after including jQuery/Zepto.
+Include delphic.ace.js after including jQuery.
 
 ```html
-<script src="delphic.ace.js"> </script>
-```
-
-Initialize:
-
-```html
-<script>
-	$.ace();
-</script>
+<script src="delphic.ace.js"></script>
 ```
 
 ## Usage:
 
-Add a *data-delphic-event* attribute to the link you want to track.
+Add a *data-track-event* attribute to the link you want to track.
+
 Possible values: `data-track-event="category, action, label, value, noninteraction"`
 
-Only category and action values are required.
+Only category and action values are required. If no label is supplied, the target's href will be used as label, if it exists.
 
 ```html
-<a href="http://www.hackaday.com" data-delphic-event="External Link, Click, Exited site with external link">HACKADAY</a>
+<a href="http://www.hackaday.com" data-track-event="External Link, Click">HACKADAY</a>
 ```
+
+You can initialize a manual call to GA with the following parameters:
+
+```html
+<script>
+	$.ace(category, action, label, value, noninteraction);
+</script>
+```
+
+Category, action, and label values are required.
+
+You can also apply ace to elements added after the DOM is initialized:
+
+```html
+<script>
+	$('.dynamically-added-link').ace('video, play');
+</script>
+```
+
+Only category and action values are required. If no label is supplied, the target's href will be used as label, if it exists.
+
 
 ### Why ace?
 
