@@ -1,2 +1,29 @@
-// Main Nav
-// ------------------------------------------------------------------------------
+.nav {
+	&__list {
+		margin: 20px 0;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	&__list-item {
+		margin: 0 0 15px;
+		font-size: 1.1rem;
+		line-height: 1.5;
+		font-weight: 500;
+	}
+
+	&__sub-list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		font-size: 1rem;
+		font-weight: 300;
+	}
+
+	&_sub-list-item {
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+	}
+}

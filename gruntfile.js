@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 
 		assemble: {
 			options: {
-				layout: './src/templates/layouts/main.hbs',
+				layout: './src/templates/layouts/base.hbs',
 				partials: './src/templates/partials/**/*.hbs',
 				plugins: ['assemble-contrib-permalinks'],
 				permalinks: {
@@ -37,7 +37,7 @@ module.exports = function (grunt) {
 
 		clean: {
 			build: {
-				src: ['./dist/**/*']
+				src: ['./dist/**/*','!./dist/*.css','!./dist/*.css.map']
 			}
 		},
 
@@ -54,7 +54,7 @@ module.exports = function (grunt) {
 
 		browserSync: {
 			bsFiles: {
-				src : 'dist/**/*'
+				src : ['dist/**/*','!dist/**/*.map']
 			},
 			options: {
 				watchTask: true,

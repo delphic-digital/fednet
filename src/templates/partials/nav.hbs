@@ -1,32 +1,31 @@
-{{section}}
-<ul>
-	<li>Overview
-		<ul>
+<ul class="nav__list">
+	<li class="nav__list-item">Overview
+		<ul class="nav__sub-list">
 			{{#each pages }}
 				{{#is data.section "overview"}}
-					<li{{#is ../../page.dest this.dest}} class="active"{{/is}}>
+					<li class="nav_sub-list-item {{#is ../../page.dest this.dest}}nav_sub-list-item--active{{/is}}">
 						<a href="{{relative ../../page.dest this.dest}}">{{data.title}}</a>
 					</li>
 				{{/is}}
 			{{/each}}
 		</ul>
 	</li>
-	<li>Code Standards
-		<ul>
+	<li class="nav__list-item">Code Standards
+		<ul class="nav__sub-list">
 			{{#each pages }}
 				{{#is data.section "code-standards"}}
-					<li{{#is ../../page.dest this.dest}} class="active"{{/is}}>
+					<li class="nav_sub-list-item {{#is ../../page.dest this.dest}}nav_sub-list-item--active{{/is}}">
 						<a href="{{relative ../../page.dest this.dest}}">{{data.title}}</a>
 					</li>
 				{{/is}}
 			{{/each}}
 		</ul>
 	</li>
-	<li>Components
-		<ul>
+	<li class="nav__list-item">Components
+		<ul class="nav__sub-list">
 			{{#each pages }}
 				{{#is data.section "components"}}
-					<li{{#is ../../page.dest this.dest}} class="active"{{/is}}>
+					<li class="nav_sub-list-item {{#is ../../page.dest this.dest}}nav_sub-list-item--active{{/is}}">
 						<a href="{{relative ../../page.dest this.dest}}">{{data.title}}</a>
 					</li>
 				{{/is}}
