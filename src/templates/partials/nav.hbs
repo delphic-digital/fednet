@@ -1,0 +1,36 @@
+{{section}}
+<ul>
+	<li>Overview
+		<ul>
+			{{#each pages }}
+				{{#is data.section "overview"}}
+					<li{{#is ../../page.dest this.dest}} class="active"{{/is}}>
+						<a href="{{relative ../../page.dest this.dest}}">{{data.title}}</a>
+					</li>
+				{{/is}}
+			{{/each}}
+		</ul>
+	</li>
+	<li>Code Standards
+		<ul>
+			{{#each pages }}
+				{{#is data.section "code-standards"}}
+					<li{{#is ../../page.dest this.dest}} class="active"{{/is}}>
+						<a href="{{relative ../../page.dest this.dest}}">{{data.title}}</a>
+					</li>
+				{{/is}}
+			{{/each}}
+		</ul>
+	</li>
+	<li>Components
+		<ul>
+			{{#each pages }}
+				{{#is data.section "components"}}
+					<li{{#is ../../page.dest this.dest}} class="active"{{/is}}>
+						<a href="{{relative ../../page.dest this.dest}}">{{data.title}}</a>
+					</li>
+				{{/is}}
+			{{/each}}
+		</ul>
+	</li>
+</ul>

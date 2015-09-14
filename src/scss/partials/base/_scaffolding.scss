@@ -1,28 +1,13 @@
-html { box-sizing: border-box; }
-*, *:before, *:after { box-sizing: inherit; }
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-html,
-body {
-  margin: 0;
+html {
+	font-family: "mobile";
+
+	@include breakpoint(medium) {
+	 	font-family: "tablet";
+  }
+
+	@include breakpoint(wide) {
+		font-family: "desktop";
+	}
 }
-
-.page {
-	display: flex;
-	flex-direction: column;
-  min-height: 100%;
-  background: #fdfdfd;
-  border-top: 1px solid #a1b56c;
-}
-
-main {
-	display: flex;
-	flex-direction: row;
-	flex: 1 0 auto;
-  margin: 0 auto;
-  padding: 1.5em;
-  width: 100%;
-  max-width: 70rem;
-}
-
-main aside   { flex: 0 0 auto; padding: 0 120px 0 0;}
-main article { flex: 1}
