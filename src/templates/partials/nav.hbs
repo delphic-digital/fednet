@@ -1,35 +1,35 @@
 <ul class="nav__list">
-	<li class="nav__list-item">Overview
+	<li class="nav__list-item">Introduction
 		<ul class="nav__sub-list">
-			{{#each pages }}
-				{{#is data.section "overview"}}
+			{{#withSort pages 'data.sortOrder'}}
+				{{#is data.section "introduction"}}
 					<li class="nav_sub-list-item {{#is ../../page.dest this.dest}}nav_sub-list-item--active{{/is}}">
 						<a href="{{relative ../../page.dest this.dest}}">{{data.title}}</a>
 					</li>
 				{{/is}}
-			{{/each}}
+			{{/withSort}}
 		</ul>
 	</li>
 	<li class="nav__list-item">Code Standards
 		<ul class="nav__sub-list">
-			{{#each pages }}
+			{{#withSort pages 'data.sortOrder'}}
 				{{#is data.section "code-standards"}}
 					<li class="nav_sub-list-item {{#is ../../page.dest this.dest}}nav_sub-list-item--active{{/is}}">
 						<a href="{{relative ../../page.dest this.dest}}">{{data.title}}</a>
 					</li>
 				{{/is}}
-			{{/each}}
+			 {{/withSort}}
 		</ul>
 	</li>
 	<li class="nav__list-item">Components
 		<ul class="nav__sub-list">
-			{{#each pages }}
+			{{#withSort pages 'data.sortOrder'}}
 				{{#is data.section "components"}}
 					<li class="nav_sub-list-item {{#is ../../page.dest this.dest}}nav_sub-list-item--active{{/is}}">
 						<a href="{{relative ../../page.dest this.dest}}">{{data.title}}</a>
 					</li>
 				{{/is}}
-			{{/each}}
+			 {{/withSort}}
 		</ul>
 	</li>
 </ul>

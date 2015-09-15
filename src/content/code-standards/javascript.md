@@ -1,7 +1,7 @@
 ---
 title:     "Javascript"
 section:   "code-standards"
-sortOrder: 2
+sortOrder: 3
 ---
 
 JS Code Standards

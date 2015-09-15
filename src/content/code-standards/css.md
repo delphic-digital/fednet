@@ -1,7 +1,7 @@
 ---
 title:     "CSS"
 section:   "code-standards"
-sortOrder: 1
+sortOrder: 2
 ---
 
 CSS Code Standards

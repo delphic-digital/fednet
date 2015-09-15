@@ -25,7 +25,9 @@
 			<section>
 				<h1>{{title}}</h1>
 				<article>
-				{{> body}}
+					{{#markdown }}
+						{{> body  }}
+					{{/markdown }}
 				</article>
 			</section>
 		</main>
