@@ -6,7 +6,7 @@ sortOrder: 1
 
 HTML markup defines the content of a document and gives it a rudimentary structure such as section dividers, headers, paragraphs, lists, menus, and forms.
 
-##Goals for Markup
+##Goals
 Please follow conventions established for a given project so all team members can have the same expectations around document structure and markup.
 
 Structural consistency is critical when talking about the types of pages being used on a site or in a Web app. The markup structure provides all the necessary hooks for scripting and behavior, so it's important that the appropriate hooks are in place.

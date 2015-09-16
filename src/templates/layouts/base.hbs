@@ -14,26 +14,23 @@
 	</head>
 	<body>
 
-		<div class="container">
+		<aside class="sidebar">
+			<header class="header">{{>header}}</header>
+			<nav class="nav">{{>nav}}</nav>
+			<footer class="footer">{{>footer}}</footer>
+		</aside>
 
-			<aside class="sidebar">
-				<header class="header">{{>header}}</header>
-				<nav class="nav">{{>nav}}</nav>
-				<footer class="footer">{{>footer}}</footer>
-			</aside>
+		<main>
+			<section>
+				<h1>{{title}}</h1>
+				<article>
+					{{#markdown }}
+						{{> body  }}
+					{{/markdown }}
+				</article>
+			</section>
+		</main>
 
-			<main>
-				<section>
-					<h1>{{title}}</h1>
-					<article>
-						{{#markdown }}
-							{{> body  }}
-						{{/markdown }}
-					</article>
-				</section>
-			</main>
-
-		</div>
 		<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/0.5.7/lunr.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
