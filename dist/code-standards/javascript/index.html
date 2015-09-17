@@ -128,6 +128,139 @@
 <li>What happens if for some reason this code is missing or does not run?</li>
 <li>What happens if the code triggers an error?</li>
 </ul>
+<h3 id="ecmascript-6-es6-ecmascript-2015">ECMAScript 6, ES6, ECMAScript 2015</h3>
+<p>Developers are encouraged to begin learning and using the [latest version of JavaScript, ES6][link-es6book]. Please use appropriate transpilers and never release untested or unsupported code in the deliverables. Do <strong>not</strong> assume a feature [is supported][link-es6support] in a browser.</p>
+<h2 id="javascript-best-practices">JavaScript Best Practices</h2>
+<h3 id="inclusion-of-code">Inclusion of Code</h3>
+<p>Use external JavaScript files. <strong>Do NOT include JavaScript in-line in the page unless there is a good reason.</strong></p>
+<p>Use the <code>&lt;script&gt;</code> tag to include your JavaScript files at the bottom of your HTML document just before the closing <code>&lt;/body&gt;</code> tag. For optimal page performance, concatenate your JavaScript into as few files as possible.</p>
+<pre><code class="language-HTML">&lt;script src=&quot;bundle.js&quot;&gt;&lt;/script&gt;</code></pre>
+<ul>
+<li>This should link to concatenated and minified, finalized JavaScript files.</li>
+<li>Enable source maps to assist with debugging and testing.</li>
+</ul>
+<h3 id="loading-files-on-demand">Loading Files On Demand</h3>
+<p>On some sites it may be appropriate to load a single JavaScript file with all dependencies bundled together, or it may be more appropriate (such as in a very large SPA) to load files on demand, as they are needed, asynchronously. See our boilerplate for examples on how we load JavaScript modules on demand.</p>
+<h3 id="writing-and-formatting-javascript">Writing and Formatting JavaScript</h3>
+<p>The use of whitespace should follow long-standing English writing conventions, with blank lines between ideas and groups of code such as objects, functions, and new lines for new statements.</p>
+<p>Formatting the language statements and patterns should follow these basics:</p>
+<ul>
+<li>Open braces are preceded by a single space.</li>
+<li>Open braces should appear on the same line as their preceding argument.</li>
+<li>Close braces should appear at the same indentation as the statement preceding the opening brace</li>
+<li>There should be no space characters between parentheses and their contents.</li>
+<li>Use semicolons and do not rely on automatic semicolon insertion.</li>
+<li>Each comma and colon (and semi-colons that don&#39;t end a line) should be followed by a single space.</li>
+<li>Binary and ternary operators should have a single space on each side.</li>
+<li>Quoted values should be in &#39;single quotes&#39; so that double quotes may easily exist inside them.</li>
+<li>Comment JavaScript code thoroughly and consider using a pattern such as those described by JSDocs so that documentation may be generated * automatically.</li>
+<li>Conditional statements go on a new line followed by the opening brace.</li>
+<li>Else/else go on the same line as the brace.</li>
+<li>Use type strict checks with === as opposed to == whenever possible.</li>
+</ul>
+<pre><code class="language-javascript"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>, len = arr.length; i &lt; len; i++) {
+    <span class="keyword">var</span> example = <span class="number">1</span>;
+    <span class="keyword">if</span> (example === i) {
+        <span class="comment">// we are looping</span>
+    } <span class="keyword">else</span> {
+        <span class="comment">// this will never happen</span>
+    }
+}</code></pre>
+<p>To maximize readability without worrying about which boolean operators bind more tightly than others, each segment of a boolean expression should be enclosed in parentheses.</p>
+<pre><code class="language-javascript"><span class="keyword">if</span> ((allowUpdate) &amp;&amp; ((user.isAdmin) || (user.role === item.owner))) {
+    <span class="comment">// do something</span>
+}</code></pre>
+<h3 id="variable-declaration">Variable Declaration</h3>
+<p>We declare each variable with a single, combined <code>var</code> statement with a comma-separated list of variable declarations and assignments whenever possible. Use a new line per variable and 4 spaces to indent the next variable line, not a tab. Make sure to end the last variable with a semicolon to close the statement.</p>
+<pre><code class="language-javascript"><span class="keyword">var</span> foo = <span class="number">1</span>,
+    bar = <span class="number">2</span>,
+    foobar = parseInt($(<span class="keyword">this</span>).attr(<span class="string">'min'</span>), <span class="number">10</span>);</code></pre>
+<h3 id="best-practices">Best Practices</h3>
+<ul>
+<li>Avoid user-agent sniffing and rely on feature detection instead. Browser detection is dangerous and error-prone.</li>
+<li>Avoid using <code>document.write</code>.</li>
+<li>Only run scripts on a page that are needed for that page.</li>
+<li>Don&#39;t repeat yourself (i.e. keep your code DRY)</li>
+<li>Do not modify JavaScript core objects <code>.prototype</code> unless you really know what you&#39;re doing.</li>
+<li>Use method names that make sense, such as <code>init()</code> or <code>setup()</code> for code that starts things off. Be consistent on your project.</li>
+</ul>
+<h3 id="variable-scope">Variable Scope</h3>
+<p>Minimize the use of <code>global</code> or <code>window</code> level variables and name-spaces. Pollution of the global name-space is error prone and a bad practice.</p>
+<p>If referencing a <code>window</code> or <code>global</code> level variable that isn&#39;t obvious, please comment as such or explicitly state it.</p>
+<pre><code class="language-javascript"><span class="keyword">var</span> window.thing = {};</code></pre>
+<h3 id="variable-names-and-types">Variable Names and Types</h3>
+<p>Always use meaningful variable names that can be read as words, not as silly abbreviations only you understand.</p>
+<ul>
+<li>Variable names should be <code>camelCase</code>.</li>
+<li>Objects, classes, and name-spaces should be <code>TitleCase</code>.</li>
+<li>Boolean values should be prefixed with <code>is</code> if at all possible.</li>
+<li>Cached jQuery objects can be prefixed with <code>$</code>.</li>
+<li>Use shorthand versions of empty <code>Arrays</code> and <code>Objects</code>.</li>
+</ul>
+<h3 id="feature-detection">Feature Detection</h3>
+<p>Always test for the existence of a browser API, function, or object property before you use it, and make sure the user experience is still functional (to the extent possible) if it&#39;s not found. We rely on JavaScript-based feature detection rather than server-side device detection because it&#39;s more robust, easily maintained, and future-proof.</p>
+<h3 id="limit-events-use-event-delegation">Limit Events - Use Event Delegation</h3>
+<p>It is always preferable to use fewer events being bound to objects on a page as possible. Too many events bound on a page can mean memory leaks or just an accumulation of handlers bound to DOM elements which becomes less and less efficient over time. Additionally, event delegation has the added benefit of persisting events over dynamic page updates when items are added or removed from the DOM.</p>
+<p>With jQuery this is easy, simply use the <code>on</code> method with a selector:</p>
+<pre><code class="language-javascript">$(<span class="string">'body'</span>).on(<span class="string">'click'</span>, <span class="string">'a.scroller'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
+   <span class="comment">// this only runs if the a.scroller is matched</span>
+});</code></pre>
+<h3 id="javascript-performance">JavaScript Performance</h3>
+<p>One of the most costly operations a browser can perform is updating the DOM in the page via inefficient JavaScript techniques. The most important thing to know is that the more you do on a Web page with JavaScript, the more work is being done, the more memory and the bigger the footprint it can generate. Additionally, updating a complex DOM structure over and over in JavaScript can cause re-flow, repainting, and jank.</p>
+<p>A book could be written on the subject, but here&#39;s a taste of various references:</p>
+<ul>
+<li><a href="https://developers.google.com/speed/articles/reflow?hl=en">Minimizing browser re-flow</a></li>
+<li><a href="http://blog.letitialew.com/post/30425074101/repaints-and-reflows-manipulating-the-dom">Repaints and Reflows, Manipulating the DOM Responsibly</a></li>
+<li><a href="http://www.stubbornella.org/content/2009/03/27/reflows-repaints-css-performance-making-your-javascript-slow/">Reflows &amp; Repaints: Css Performance Making Your Javascript Slow?</a></li>
+<li><a href="http://www.phpied.com/rendering-repaint-reflowrelayout-restyle/">Rendering: repaint, reflow/relayout, restyle</a></li>
+<li><a href="http://www.nczonline.net/blog/2009/02/03/speed-up-your-javascript-part-4/">Speed Up Your JavaScript (part 4)</a></li>
+<li><a href="https://gist.github.com/dypsilon/4252079">Memory Management and Performance</a></li>
+<li><a href="http://www.smashingmagazine.com/2012/11/writing-fast-memory-efficient-javascript/">Writing Fast, Memory-Efficient JavaScript</a></li>
+<li><a href="http://www.punkchip.com/javascript-efficiency/">Front-end developer essentials – 5 tips for efficient jQuery</a></li>
+</ul>
+<h3 id="basic-javascript-architecture">Basic JavaScript Architecture</h3>
+<p>Today it is common for the JavaScript code on a site to be a vast collection of &quot;Modules&quot; brought together by build scripts, dependency tools, or even manually by the developer (not really recommended).</p>
+<p>Smaller sites can get away with more simple structures, but for longer term, JavaScript-heavy code bases the following rule is critical:</p>
+<ul>
+<li>For a complex site, never use a single JavaScript file for development, unless it is tiny and serves a very targeted purpose.</li>
+</ul>
+<p>This is so that the code is maintainable and scalable. Smaller files are easier to debug, swap in and out, and blocks of code should serve as small a purpose as possible.</p>
+<p>In most simple terms, most sites benefit from a basic structure similar to:</p>
+<ul>
+<li>Global site-wide JavaScript</li>
+<li>Specific modules for specific sections of the site</li>
+<li>Specific modules used for specific purposes / features</li>
+<li>Available vendor libraries</li>
+</ul>
+<p>With this in mind, for strict control over the code base it&#39;s best to consider:</p>
+<ul>
+<li>What is the <strong>central entry point</strong>, or the central point of execution? This is to say, what kicks off the JavaScript? This may be a simple jQuery <code>document.ready()</code> or some other mechanism to run the site&#39;s code, such as a router.</li>
+</ul>
+<p>Having explicit control over the page life-cycle is preferable to having a dozen jQuery <code>document.ready()</code> statements all competing for the first chance to execute on a page.</p>
+<p>Effectively the application core, it should kick off the rest of the code to run. Typically this has module-management baked in in some way.</p>
+<p>See our boilerplate on how we use AMD modules for our sites.</p>
+<p>Additional considerations:</p>
+<ul>
+<li>How are the modules going to communicate with each other?</li>
+<li>How tightly coupled are the modules in the code base?</li>
+<li>How much JavaScript code would need to be updated if/when the HTML / CSS changes on the project?</li>
+<li>Can individual parts call as few libraries or plugins as indirectly as possible, to facilitate changes later?</li>
+<li>Does the server need to provide the scripts dynamic values for JavaScript?</li>
+</ul>
+<h3 id="about-javascript-modules">About JavaScript Modules</h3>
+<p><strong>Vanilla JavaScript</strong>:</p>
+<ul>
+<li>[Object literal notation][<a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript">http://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript</a>]</li>
+<li>The [Revealing Module Pattern][<a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript">http://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript</a>]</li>
+</ul>
+<p>Or, a <strong>common standard</strong>, used by many dependency tools:</p>
+<ul>
+<li>[AMD modules][link-amd]  (most commonly used by [require.js][<a href="http://requirejs.org/">http://requirejs.org/</a>])</li>
+<li>CommonJS modules (most common used by node.js and browserify)</li>
+<li><p>[ES6 modules][<a href="https://leanpub.com/understandinges6/read/#leanpub-auto-modules">https://leanpub.com/understandinges6/read/#leanpub-auto-modules</a>]</p>
+<p>ES6 modules could possibility be the future, so doesn&#39;t hurt to learn them now.</p>
+</li>
+</ul>
 
 				</article>
 			</section>
