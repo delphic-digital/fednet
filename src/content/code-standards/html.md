@@ -49,3 +49,24 @@ All markup should be delivered as UTF-8, since it has the best support for inter
 ```html
 <meta charset="UTF-8">
 ```
+
+###Indentation in HTML
+Indent nested elements and tags with single indentation settings, whatever they may be, for each level in the hierarchy of the document.
+
+####HTML5 Elements
+To provide additional semantic value to our documents, make use of HTML5 elements such as `<header>`, `<article>`, and `<section>` where appropriate. However, in cases where the HTML needs to be as backwards-compatible as possible, do not apply IDs or classes to them, since older browsers do not understand these elements by default and will not apply styling to them.
+
+###IDs vs. Classes
+HTML elements can be identified by using the id and class attributes. An ID is a unique identifier for that particular element; no other element on the page should use the same ID.
+
+This uniqueness allows `<label>` elements to associate themselves with a particular input and URLs to jump to a particular scroll position on a page.
+
+Classes are not unique. The same class can be used on multiple elements within a page, and a single element can have more than one class, in a space delimited list.
+
+When coming up with names for an ID or class, we use [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) methodology. More information is in the CSS section. Please refer there.
+
+###Tables
+Tables should not be used for page layout; only use them when you need to display tabular data. Tables provide an important semantic association (used mostly by screen readers for the sight-impaired) between row/column headers and their data, so use <table> rather than other elements when displaying multiple records of data.
+
+###Input Labels
+All input fields should be associated with a <label> element. The for attribute of the <label> element should contain the ID of the corresponding input field. This means the input field will receive focus when a user clicks the label and also enables screen readers for sight-impaired users to read out an appropriate description of the input field.
