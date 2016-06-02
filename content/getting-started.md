@@ -1,7 +1,7 @@
----
-title:   "Philosophy"
-section: "introduction"
----
+/*
+Title: Introduction
+Sort: 1
+*/
 
 This site contains the guidelines and best practices for the front-end web development team at Delphic.
 
