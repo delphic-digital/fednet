@@ -1,0 +1,67 @@
+{
+  "name": "jquery.backstretch",
+  "title": "Backstretch",
+  "description": "A simple jQuery plugin that allows you to add a dynamically-resized, slideshow-capable background image to any page or element.",
+  "version": "2.1.1",
+  "main": "jquery.backstretch.js",
+  "homepage": "http://srobbin.com/jquery-plugins/backstretch/",
+  "author": {
+    "name": "Scott Robbin",
+    "email": "scott@robbin.co",
+    "url": "http://srobbin.com"
+  },
+  "contributors": [
+    {
+      "name": "Daniel Cohen Gindi",
+      "email": "danielgindi@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/srobbin/jquery-backstretch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/srobbin/jquery-backstretch/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://srobbin.com/jquery-plugins/backstretch//blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">= 1.7"
+  },
+  "devDependencies": {
+    "grunt": "0.4.*",
+    "grunt-contrib-qunit": "0.7.*",
+    "grunt-contrib-jshint": "0.11.*",
+    "grunt-contrib-concat": "0.5.*",
+    "grunt-contrib-uglify": "0.9.*",
+    "grunt-contrib-watch": "0.6.*"
+  },
+  "keywords": [],
+  "_id": "jquery.backstretch@2.1.1",
+  "scripts": {},
+  "_shasum": "ef6ec2b64d0f843ac64869ef4e728246a6b68b49",
+  "_from": "jquery.backstretch@2.1.1",
+  "_npmVersion": "2.14.2",
+  "_nodeVersion": "4.0.0",
+  "_npmUser": {
+    "name": "melanke",
+    "email": "melanke.hc@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "melanke",
+      "email": "melanke.hc@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "ef6ec2b64d0f843ac64869ef4e728246a6b68b49",
+    "tarball": "https://registry.npmjs.org/jquery.backstretch/-/jquery.backstretch-2.1.1.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/jquery.backstretch/-/jquery.backstretch-2.1.1.tgz",
+  "readme": "ERROR: No README data found!"
+}

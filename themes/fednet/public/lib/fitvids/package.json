@@ -1,0 +1,75 @@
+{
+  "name": "fitvids",
+  "version": "1.0.2",
+  "description": "Makes your videos fluid-width.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "devDependencies": {
+    "hihat": "^2.4.3",
+    "tap-dev-tool": "^1.3.0",
+    "tape": "^4.2.0",
+    "uglify-js": "^2.4.24"
+  },
+  "keywords": [
+    "video",
+    "responsive",
+    "fluid",
+    "width",
+    "fitvids",
+    "wrapper"
+  ],
+  "xo": {
+    "env": [
+      "browser"
+    ],
+    "semicolon": false,
+    "rules": {
+      "space-before-function-paren": [
+        2,
+        "always"
+      ],
+      "curly": [
+        2,
+        "multi-line"
+      ]
+    }
+  },
+  "author": {
+    "name": "Ross Zurowski",
+    "email": "ross@rosszurowski.com"
+  },
+  "license": "WTFPL",
+  "homepage": "https://github.com/rosszurowski/vanilla-fitvids#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rosszurowski/vanilla-fitvids.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rosszurowski/vanilla-fitvids/issues"
+  },
+  "gitHead": "7a182a385284f5f173c1c882ca5803bc4205febb",
+  "_id": "fitvids@1.0.2",
+  "_shasum": "5b53034f3b9c5c8bad14ab6475892c54ed0886ca",
+  "_from": "fitvids@1.0.2",
+  "_npmVersion": "2.13.4",
+  "_nodeVersion": "2.3.3",
+  "_npmUser": {
+    "name": "rosszurowski",
+    "email": "ross@rosszurowski.com"
+  },
+  "maintainers": [
+    {
+      "name": "rosszurowski",
+      "email": "ross@rosszurowski.com"
+    }
+  ],
+  "dist": {
+    "shasum": "5b53034f3b9c5c8bad14ab6475892c54ed0886ca",
+    "tarball": "https://registry.npmjs.org/fitvids/-/fitvids-1.0.2.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/fitvids/-/fitvids-1.0.2.tgz",
+  "readme": "ERROR: No README data found!"
+}

@@ -1,7 +1,7 @@
-/*
-Title: Introduction
-Sort: 1
-*/
+---
+title: Introduction
+sort:  2
+---
 
 This site contains the guidelines and best practices for the front-end web development team at Delphic.
 
