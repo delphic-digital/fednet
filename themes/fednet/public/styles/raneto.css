@@ -12,6 +12,17 @@ body {
 
 a { color:#007DCC; }
 
+pre {
+	margin: 2em 0;
+}
+.hljs {
+	font-family: 'Roboto Mono';
+	font-size: 11px;
+	border-width: 1px;
+  border-style: solid;
+  border-color: #000 #ccc #ccc #000;
+}
+
 main {
 	display: flex;
 	flex: 1;
@@ -62,6 +73,7 @@ nav {
 	flex: 1;
 	padding: 20px 40px;
 	max-width: 1000px;
+	line-height: 1.5;
 	background: #FFFBF5;
 }
 
