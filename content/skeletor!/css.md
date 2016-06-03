@@ -1,4 +1,5 @@
 ---
+title: CSS
 sort: 4
 ---
 ## How to use CSS in Skeletor
