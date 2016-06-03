@@ -1,6 +1,6 @@
 ---
-title: "Javascript"
-sort:  2
+title: Javascript
+sort:  4
 ---
 
 JavaScript is where extra behaviors, features, and functionality not offered natively by Web browsers through CSS and HTML is created.

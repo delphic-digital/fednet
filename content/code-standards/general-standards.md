@@ -1,6 +1,6 @@
 ---
 title: General Standards
-sort:  2
+sort:  1
 ---
 
 For any project:

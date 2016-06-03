@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "set DEBUG=raneto&&set PORT=4000&&node server.js"
+    "start": "set DEBUG=raneto&&set PORT=4000&&node server.js",
+    "development": "./node_modules/.bin/nodemon -V --watch themes server.js"
   },
   "repository": {
     "type": "git",
