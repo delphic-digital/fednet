@@ -18,6 +18,7 @@ main {
 	margin: 0 auto;
 	min-height: 100vh;
 	color: #555;
+	background: #FFFBF5;
 }
 
 header {
@@ -36,6 +37,11 @@ header a {
 
 header form {
 	margin-left: auto;
+}
+
+.search-form input {
+	padding: 8px;
+	border: 0;
 }
 
 footer {
@@ -94,4 +100,83 @@ h1,h2,h3,h4,h5,h6 {
 
 .menu .page.active a {
 	color: #007DCC;
+}
+
+
+.page-home main {
+	display: block;
+	width: 100%;
+}
+
+.page-home .col {
+	width: 33.33333%;
+	padding: 0 15px;
+}
+
+.home-search{
+	padding: 50px;
+	background: #333333;
+}
+
+.home-search .search-form {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.home-search .search-form button {
+	padding: 0 10px;
+	height: 32px;
+	background: #007DCC;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+}
+
+.home-categories {
+	margin: 40px 0;
+}
+
+.panel-heading {
+	margin: 0;
+	color: #fff;
+	font-size: 13px;
+	font-weight: normal;
+  background-color: #333333;
+  border-color: #ddd;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.panel > .list-group {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.list-group-item {
+	position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+}
+
+.list-group-item a {
+	text-decoration: none;
 }
