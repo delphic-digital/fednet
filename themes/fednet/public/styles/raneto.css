@@ -60,6 +60,7 @@ nav {
 .content {
 	flex: 1;
 	padding: 20px 40px;
+	max-width: 1000px;
 	background: #FFFBF5;
 }
 
