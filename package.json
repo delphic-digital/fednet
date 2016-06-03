@@ -2,7 +2,7 @@
   "name": "fednet",
   "version": "2.0.0",
   "description": "FED knowledge base",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "set DEBUG=raneto&&set PORT=4000&&node server.js",
@@ -18,9 +18,8 @@
     "url": "https://github.com/delphic-digital/fednet/issues"
   },
   "homepage": "https://github.com/delphic-digital/fednet#readme",
-  "devDependencies": {
+  "dependencies": {
     "debug": "^2.2.0",
     "raneto": "^0.10.0"
-  },
-  "dependencies": {}
+  }
 }
