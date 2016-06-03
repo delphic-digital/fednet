@@ -24,11 +24,12 @@ header {
 	padding: 20px;
 	display: flex;
 	color: #a4a4a4;
-	background: #000;
+	background: #007DCC;
 }
 
 header a {
 	align-self: flex-start;
+	margin-top: 5px;
 	font-size: 18px;
 	text-decoration: none;
 	color: #fff;
