@@ -1,0 +1,1 @@
+[Scalable and Modular Architecture for CSS (SMACSS)](https://smacss.com)
