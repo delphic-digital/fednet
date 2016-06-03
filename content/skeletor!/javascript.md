@@ -1,3 +1,7 @@
+---
+sort: 5
+---
+
 ## How to use JavaScript in Skeletor
 
 Skeletor comes with JavaScript structure using [RequireJS](http://requirejs.org). See the comments in each JS for more detailed explanations. Some JS helper libraries and plugins are included:

@@ -1,3 +1,7 @@
+---
+sort: 7
+---
+
 ## How to create a styleguide with Skeletor
 
 Skeletor is equipped with [Hologram](https://github.com/trulia/hologram), a markdown-based documentation system for creating a [living style guide](http://styleguides.io/) for your project. Hologram looks for markdown comments and your CSS rules inside your partials to create the pages and sections for your living style guide.
@@ -10,12 +14,12 @@ Each partials' markdown comment tells Hologram how to organize this element / co
 
 To edit your styleguide homepage, edit the markdown in [```/Static/src/scss/index.md```](/Static/src/scss/index.md)
 
-To build your styleguide, run: 
+To build your styleguide, run:
 
 ```grunt hologram```
 
 
-To view the styleguide in your browser locally (with BrowserSync running), surf to the following URL: 
+To view the styleguide in your browser locally (with BrowserSync running), surf to the following URL:
 
 [http://localhost:3000/Static/dist/styleguide/](http://localhost:3000/Static/dist/styleguide/)
 

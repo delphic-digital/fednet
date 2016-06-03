@@ -1,3 +1,6 @@
+---
+sort: 3
+---
 ## How to use Skeletor
 
 What it does:

@@ -1,3 +1,6 @@
+---
+sort: 4
+---
 ## How to use CSS in Skeletor
 
 Skeletor comes with Sass and a structure setup. See the comments in each partial for more detailed explanations. Also, some sass helper libraries and plugins are preinstalled:

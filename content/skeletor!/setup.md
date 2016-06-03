@@ -1,3 +1,7 @@
+---
+sort: 2
+---
+
 ## Getting Started
 
 Skeletor uses open source tools for its workflow. If you haven't installed these requirements please do so.
