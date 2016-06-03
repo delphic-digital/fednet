@@ -3,10 +3,10 @@
 		{{#pages}}
 			<li class="category">
 				{{#is_index}}
-					<h5 class="category-title">Main Articles {{#canEdit}}<a class="add-page" data-toggle="modal" data-target="#addModal" title="{{lang.page.addPage}}"><span style="font-weight: bold; font-size: 16px; cursor:pointer">&#43;</span></a>{{/canEdit}}</h5>
+					<h5 class="category-title">Main Articles</h5>
 				{{/is_index}}
 				{{^is_index}}
-					<h5 class="category-title">{{title}} {{#canEdit}}<a class="add-page" data-toggle="modal" data-target="#addModal" title="{{lang.page.addPage}}"><span style="font-weight: bold; font-size: 16px; cursor:pointer">&#43;</span></a>{{/canEdit}}</h5>
+					<h5 class="category-title">{{title}}</h5>
 				{{/is_index}}
 				<ul class="pages">
 					{{#files}}
