@@ -44,12 +44,12 @@
             //var slug = '/code-standards/general-standards'
             var splitSlug = slug.split('/')
 
-            console.log(splitSlug.length)
+            //console.log(splitSlug.length)
 
             if(splitSlug.length>2){
               var catSlug = splitSlug[1];
               var pageSlug = splitSlug[2];
-              console.log(catSlug, pageSlug)
+              //console.log(catSlug, pageSlug)
 
 
 
