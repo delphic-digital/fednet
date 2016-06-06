@@ -203,13 +203,13 @@ Additional considerations:
 
 **Vanilla JavaScript**:
 
- * [Object literal notation][http://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript]
- * The [Revealing Module Pattern][http://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript]
+ * [Object literal notation](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript)
+ * The [Revealing Module Pattern](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#revealingmodulepatternjavascript)
 
 Or, a **common standard**, used by many dependency tools:
 
- * [AMD modules][link-amd]  (most commonly used by [require.js][http://requirejs.org/])
+ * [AMD modules](http://requirejs.org/docs/whyamd.html)  (most commonly used by [require.js](http://requirejs.org/))
  * CommonJS modules (most common used by node.js and browserify)
- * [ES6 modules][https://leanpub.com/understandinges6/read/#leanpub-auto-modules]
+ * [ES6 modules](https://leanpub.com/understandinges6/read/#leanpub-auto-modules)
 
  ES6 modules could possibility be the future, so doesn't hurt to learn them now.
