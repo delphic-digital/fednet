@@ -78,12 +78,13 @@ footer {
 }
 
 .last-updated a {
-	display: inline-block;
-	width: 100px;
+	display: block;
+	line-height: 1.5;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   color: #ccc;
+  text-decoration: none;
 }
 
 nav {

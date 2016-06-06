@@ -40,15 +40,40 @@
          var contents = v2.getDirByName('content');
 
           contents.fetchContents(function (err, res) {
-            var slug = $('.page.active a').attr('href');
-            //console.log(contents.getContents())
-            var page = contents.getFileByName(slug.substring(1)+".md");
+           var slug = $('.page.active a').attr('href');
+            //var slug = '/code-standards/general-standards'
+            var splitSlug = slug.split('/')
+
+            console.log(splitSlug.length)
+
+            if(splitSlug.length>2){
+              var catSlug = splitSlug[1];
+              var pageSlug = splitSlug[2];
+              console.log(catSlug, pageSlug)
+
+
+
+              var pages = contents.getDirByName(catSlug);
+               pages.fetchContents(function (err, res) {
+                 var page = pages.getFileByName(pageSlug + ".md");
+                 page.fetchCommits(function (err, res) {
+                  var lastCommit = page.getLastCommit();
+                  var time = moment(lastCommit.author.date).format("ddd, MMM Do, h:mm:ss a");
+
+                  $('.last-updated').html('Last updated on '+time+' by '+lastCommit.author.name+ ' '+'<a href="https://github.com/delphic-digital/fednet/commit/'+lastCommit.sha+'">'+lastCommit.sha+'</a>')
+                 })
+               })
+
+            }else{
+              var page = contents.getFileByName(slug.substring(1)+".md");
              page.fetchCommits(function (err, res) {
               var lastCommit = page.getLastCommit();
               var time = moment(lastCommit.author.date).format("ddd, MMM Do, h:mm:ss a");
 
               $('.last-updated').html('Last updated on '+time+' by '+lastCommit.author.name+ ' '+'<a href="https://github.com/delphic-digital/fednet/commit/'+lastCommit.sha+'">'+lastCommit.sha+'</a>')
              })
+            }
+
           })
         })
 
