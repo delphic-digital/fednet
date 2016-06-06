@@ -77,6 +77,15 @@ footer {
 	background: #e7e9db;
 }
 
+.last-updated a {
+	display: inline-block;
+	width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #ccc;
+}
+
 nav {
 	padding: 20px;
 	width: 200px;
