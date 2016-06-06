@@ -12,10 +12,10 @@
     if ($(".content").length) {
 
       // Syntax highlighting
-      hljs.initHighlightingOnLoad();
-
-      // Add Bootstrap styling to tables
-      $(".content table").addClass("table");
+     // hljs.initHighlightingOnLoad();
+      $('code').each(function(i, block) {
+       hljs.highlightBlock(block);
+      });
 
       // FitVids
       fitvids(".content");

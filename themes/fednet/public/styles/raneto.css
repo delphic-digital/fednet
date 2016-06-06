@@ -15,12 +15,27 @@ a { color:#007DCC; }
 pre {
 	margin: 2em 0;
 }
-.hljs {
+
+code {
+	display: inline;
 	font-family: 'Roboto Mono';
+}
+
+pre code { display: block !important; line-height: 1.5; }
+
+.hljs {
+	display: inline;
+	padding: 1px 3px 2px;
+	font-family: 'Roboto Mono';
+	font-size: 11px;
+}
+
+pre code.hljs {
+	padding: 5px;
 	font-size: 11px;
 	border-width: 1px;
   border-style: solid;
-  border-color: #000 #ccc #ccc #000;
+  border-color: #c3c5ba #e1e3d8 #e1e3d8 #c3c5ba;
 }
 
 main {
@@ -74,7 +89,7 @@ nav {
 	flex: 1;
 	padding: 20px 40px;
 	max-width: 1000px;
-	line-height: 1.5;
+	line-height: 2;
 	background: #FFFBF5;
 }
 
