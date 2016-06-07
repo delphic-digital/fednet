@@ -4,4 +4,4 @@ sort:  2
 ---
 
 
-[CSS Guidelines](https://github.com/chris-pearce/css-guidelines)
+* [CSS Guidelines](https://github.com/chris-pearce/css-guidelines)
