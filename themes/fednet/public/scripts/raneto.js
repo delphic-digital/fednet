@@ -58,9 +58,9 @@
                  var page = pages.getFileByName(pageSlug + ".md");
                  page.fetchCommits(function (err, res) {
                   var lastCommit = page.getLastCommit();
-                  var time = moment(lastCommit.author.date).format("ddd, MMM Do, h:mm:ss a");
+                  var timeAgo = moment(lastCommit.author.date).fromNow();
 
-                  $('.last-updated').html('Last updated on '+time+' by '+lastCommit.author.name+ ' '+'<a href="https://github.com/delphic-digital/fednet/commit/'+lastCommit.sha+'">'+lastCommit.sha+'</a>')
+                  $('.last-updated').html('Updated by '+lastCommit.author.name+', '+timeAgo+ ' '+'<a href="https://github.com/delphic-digital/fednet/commit/'+lastCommit.sha+'">'+lastCommit.sha+'</a>')
                  })
                })
 
@@ -68,9 +68,9 @@
               var page = contents.getFileByName(slug.substring(1)+".md");
              page.fetchCommits(function (err, res) {
               var lastCommit = page.getLastCommit();
-              var time = moment(lastCommit.author.date).format("ddd, MMM Do, h:mm:ss a");
+              var timeAgo = moment(lastCommit.author.date).fromNow()
 
-              $('.last-updated').html('Last updated on '+time+' by '+lastCommit.author.name+ ' '+'<a href="https://github.com/delphic-digital/fednet/commit/'+lastCommit.sha+'">'+lastCommit.sha+'</a>')
+                  $('.last-updated').html('Updated by '+lastCommit.author.name+', '+timeAgo+ ' '+'<a href="https://github.com/delphic-digital/fednet/commit/'+lastCommit.sha+'">'+lastCommit.sha+'</a>')
              })
             }
 
