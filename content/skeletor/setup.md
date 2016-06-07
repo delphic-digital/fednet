@@ -20,11 +20,7 @@ skeletor
 |   |   |   |-- spritesheet.png
 |   |   |   |-- # Your image files
 |   |   |-- spritesheets
-|   |       |-- bitmap.example.html
-|   |       |-- bitmap.spritesheet.png
-|   |       |-- bitmap.spritesheet@2x.png
-|   |       |-- vector.example.html
-|   |       |-- vector.spritesheet.svg
+|   |       |-- # Spritesheets get generated here
 |   |-- dist
 |   |   |-- css
 |   |   |   |-- main.css
@@ -35,12 +31,8 @@ skeletor
 |       |   |-- skeletor.main.js
 |       |   |-- components
 |       |   |   |-- common.js
-|       |   |   |-- mobile.js
 |       |   |   |-- common
-|       |   |   |   |-- darkifyer.js # demo component
-|       |   |   |   |-- skeletor-guy.js # demo component
-|       |   |   |-- mobile
-|       |   |       |-- main-menu.js
+|       |   |   |   |-- # Your common components here
 |       |   |-- lib
 |       |   |   |-- require.js
 |       |   |   |-- requirejs-plugins
@@ -89,7 +81,6 @@ skeletor
 |       |       |   |-- _typography.scss
 |       |       |-- components
 |       |       |   |-- _messages.scss
-|       |       |   |-- _skeletor-avatar.scss
 |       |       |   |-- navigation
 |       |       |       |-- _main.scss
 |       |       |       |-- _sub.scss
@@ -100,7 +91,6 @@ skeletor
 |       |       |   |-- _header.scss
 |       |       |   |-- _sidebar.scss
 |       |       |-- plugins
-|       |       |   |-- .gitkeep
 |       |       |   |-- # Vendor/3rd party plugins css
 |       |       |-- utilities
 |       |           |-- _input-text-types.scss
@@ -116,21 +106,10 @@ skeletor
 |       |   |-- inline.mustache
 |       |   |-- vector.example.html
 |       |   |-- bitmaps
-|       |   |   |-- skeletor.png
-|       |   |   |-- skeletor@2x.png
-|       |   |   |-- skeletor_tall.png
-|       |   |   |-- skeletor_tall@2x.png
 |       |   |   |-- # Your bitmap (png/jpg) sprites
 |       |   |-- inline
-|       |   |   |-- cross.svg
-|       |   |   |-- plus.svg
 |       |   |   |-- # Your CSS sprites
 |       |   |-- vectors
-|       |       |-- phone.svg
-|       |       |-- sad.svg
-|       |       |-- scope.svg
-|       |       |-- search.svg
-|       |       |-- shield.svg
 |       |       |-- # Your svg spritesheet sprites
 |       |-- styleguide
 |           |-- styleguide_overrides.css
