@@ -17,7 +17,7 @@ See [Usage](usage) for explanation of `gulp` command
 
 ## File structure
 
-Compiled and production-ready code can be found in the dist directory. The src directory contains development code.
+Compiled and production-ready code can be found in the `dist` directory. The `src` directory contains development code.
 
 ```bash
 skeletor

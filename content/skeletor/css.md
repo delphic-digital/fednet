@@ -8,19 +8,22 @@ Skeletor comes with Sass and a structure setup. See the comments in each partial
 * [Susy](http://susy.oddbird.net), great for robust grids
 * [Bourbon](http://bourbon.io), awesome set of mixins
 * [Breakpoint](http://breakpoint-sass.com), used with a custom mixin to make breakpoints easy
-* [Sass CSS Importer Plugin](https://github.com/chriseppstein/sass-css-importer), helps with importing vanilla css
-* [Sass Globbing Plugin](https://github.com/chriseppstein/sass-globbing), so you don't have to add custom partials to the main.scss
+* [Node Sass Globbing](https://github.com/britco/node-sass-globbing), so you don't have to add custom partials to the main.scss
 
-### Brief overview of structure
+## Brief overview of structure
 
-Inside ```partials```
+#### `main.scss`
 
- * ```_settings.scss``` site settings defined here, see comments in partial.
- * ```base``` holds global and base styles.
- * ```components``` holds site components styles.
- * ```layout``` holds global layout styles.
- * ```pages``` holds any page specific styles (try and stick to components instead).
- * ```utilites``` holds mixins and SASS utilites.
+The `main.scss` file contains the entries points for the sites sass partials.
+
+#### `partials`
+
+ * `_settings.scss` site settings defined here, it contains variables for all of the colors, font stacks, breakpoints, and sizing.
+ * `base` holds global and base styles.
+ * `components` holds site components styles. Any partial added here is automatically imported with the globbing plugin
+ * `layout` holds global layout styles.
+ * `plugins` holds any vendor plugin CSS dependency.
+ * `utilites` holds mixins and SASS utilites.
 
 #### Overview of best practices for writing SASS/CSS with Skeletor
 
