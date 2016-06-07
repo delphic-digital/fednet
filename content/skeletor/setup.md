@@ -2,15 +2,22 @@
 sort: 2
 ---
 
-## Getting Started
-
 Skeletor uses open source tools for its workflow. If you haven't installed these requirements please do so.
 
-1. [Node.js](https://nodejs.org/en/)
-2. Install Gulp globally ```npm install --global gulp-cli```
+* [Node.js](https://nodejs.org/en/)
+* Install Gulp globally ```npm install --global gulp-cli```
 
+## Quick Start
+
+* Fork/Clone/Download the [Skeletor](https://github.com/delphic-digital/Skeletor) repository into your machine.
+* Open a terminal and install the Node.Js dependencies by running ```npm install``` in your project directory.
+* Run ```gulp``` to automatically open a new Skeletor project running on ```localhost:3000```.
+
+See [Usage](usage) for explanation of `gulp` command
 
 ## File structure
+
+Compiled and production-ready code can be found in the dist directory. The src directory contains development code.
 
 ```bash
 skeletor
@@ -124,10 +131,3 @@ skeletor
 |-- README.md
 
 ```
-
-## Get Up and Running
-
-1. Fork/Clone/Download the [Skeletor](https://github.com/delphic-digital/Skeletor) repository into your machine.
-2. Open a terminal and install the Node.Js dependencies by running ```npm install``` in your project directory.
-3. Run ```gulp``` to automatically open a new Skeletor project running on ```localhost:3000```.
-4. From now on, just run ```gulp``` in your project directory to automatically run Skeletor's Gulp tasks.
