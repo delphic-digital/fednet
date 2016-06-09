@@ -4,8 +4,20 @@ sort: 1
 
 _Skeletor_ is a directory structure and Gulpfile designed as an easy starting point for front end development of projects. Mainly it was developed for projects at Delphic Digital, but it was designed to be agnostic, so any project is capable of using it. It is designed to give you a quick and organized way to start developing web sites with best practices in mind.
 
-### Preface
-We gathered our best practices and what works best for our type of projects into a bunch of code to kick off projects.
+### Features
+
+* Command Line Interface (CLI)
+* Scaffold new projects
+* Image and SVG optimization
+* Sass compilation and minification
+	* Built in support for:
+		* [Susy](http://susy.oddbird.net/)
+		* [Bourbon](http://bourbon.io/)
+		* [Breakpoint](http://breakpoint-sass.com/)
+* Javascript AMD modules and optimization with requirejs
+* Bower for client side package management
+* Static file serving with automated reloading
+
 
 ### Get started
 

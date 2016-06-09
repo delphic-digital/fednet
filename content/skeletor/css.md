@@ -22,7 +22,6 @@ The `main.scss` file contains the entries points for the sites sass partials.
  * `base` holds global and base styles.
  * `components` holds site components styles. Any partial added here is automatically imported with the globbing plugin
  * `layout` holds global layout styles.
- * `plugins` holds any vendor plugin CSS dependency.
  * `utilites` holds mixins and SASS utilites.
 
 #### Overview of best practices for writing SASS/CSS with Skeletor
