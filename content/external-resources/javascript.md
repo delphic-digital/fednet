@@ -4,4 +4,5 @@ sort:  3
 ---
 
 
-*[4 JavaScript Design Patterns You Should Know](https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know)
+* [4 JavaScript Design Patterns You Should Know](https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know)
+* [RequireJS Sugar Syntax](http://requirejs.org/docs/whyamd.html#sugar)
