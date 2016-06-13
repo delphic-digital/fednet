@@ -2,11 +2,10 @@
 sort: 5
 ---
 
-Skeletor comes with JavaScript structure using [RequireJS](http://requirejs.org). See the comments in each JS for more detailed explanations. Some JS helper libraries and plugins are included:
+Skeletor comes with JavaScript structure using [RequireJS](http://requirejs.org). Some JS helper libraries and plugins are included automatically:
 
 * [jQuery](https://jquery.com), version 2 is automatically loaded for browers that support it, otherwise the 1.9 branch is used.
 * [Browser Update](http://browser-update.org), tell your audience to use modern browsers!
-* [isMobile](https://github.com/kaimallea/isMobile), only if you REALLY need it, typically you should be doing [feature detetection](https://learn.jquery.com/code-organization/feature-browser-detection).
 * [onMediaQuery](https://github.com/JoshBarr/on-media-query), works great for triggering javascript for certain media queries.
 * [Picturefill](https://github.com/scottjehl/picturefill), there is no reason to not use reponsive images.
 
@@ -17,7 +16,7 @@ Skeletor comes with JavaScript structure using [RequireJS](http://requirejs.org)
 	* other components will be standalone and won't be concatenated with the main (common) JS. These can be loaded directly with the HTML.
 
 
-### data-component and date-component-context
+### data-component and data-component-context
 To load a JS component, use the sample syntax in ```component-example.js```, and add a data-component to the html element that should load the JS.
 
 ```HTML
@@ -35,3 +34,5 @@ To load a JS component for only certain media queries, add a data-component-cont
 	Lorem ipsum
 </div>
 ```
+
+These components are aynced in after page load and will remain separate modules in the build process.
