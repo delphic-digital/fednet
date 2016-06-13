@@ -31,3 +31,39 @@ Skeletor integrates with bower package management very nicely for vendor compone
 # css/scss is added to main.scss
 $ bower install <package>
 ```
+
+There is some automation that happens when you use bower. Please take care to understand these steps.
+The files are determined by what's declared as a **main** file by the `bower.json` spec.
+
+**JavaScript files are added to the requirejs paths config:**
+
+```js
+// Automatically injected Bower JS dependencies via bowerRequireJS
+require.config({
+	paths: {
+		"bower-example": "../../../bower_components/bower-example",
+	},
+	packages: [
+
+	],
+	shim: {
+
+	}
+});
+```
+
+**CSS/SASS files are added to the main.scss:**
+
+```scss
+// Automatically injected Bower CSS dependencies via wiredep (never manually edit this block)
+// bower:css
+@import "../../../bower_components/bower-example.css";
+// endbower
+
+// Automatically injected Bower SCSS dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../../bower_components/bower-example.scss";
+// endbower
+```
+
+If something goes wrong (correct files aren't wired up), check the components bower.json file to make sure the `"main": []` is declared correctly. If not, you can add an override for your project's `bower.json` file. See https://github.com/ck86/main-bower-files#overrides-options for how to do this.

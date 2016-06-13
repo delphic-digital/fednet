@@ -46,12 +46,8 @@ skeletor
 |       |       |-- _settings.scss
 |       |       |-- base
 |       |       |   |-- _buttons.scss
-|       |       |   |-- _colors.scss
 |       |       |   |-- _fonts.scss
-|       |       |   |-- _helpers.scss
 |       |       |   |-- _inputs.scss
-|       |       |   |-- _links.scss
-|       |       |   |-- _normalize.scss
 |       |       |   |-- _scaffolding.scss
 |       |       |   |-- _sprites.scss
 |       |       |   |-- _svg.scss
@@ -59,19 +55,10 @@ skeletor
 |       |       |-- components
 |       |       |   |-- # Your sites Sass components
 |       |       |-- layout
-|       |       |   |-- _footer.scss
-|       |       |   |-- _forms.scss
-|       |       |   |-- _header.scss
-|       |       |   |-- _sidebar.scss
-|       |       |-- utilities
-|       |           |-- _input-text-types.scss
-|       |           |-- _placeholders.scss
-|       |           |-- _resets.scss
-|       |           |-- _str-replace.scss
-|       |           |-- _to-string.scss
-|       |           |-- _url-encode.scss
-|       |           |-- _vertical-align.scss
-|       |           |-- # Your SASS mixins
+|       |           |-- _footer.scss
+|       |           |-- _forms.scss
+|       |           |-- _header.scss
+|       |           |-- _sidebar.scss
 |       |-- sprites
 |       |   |-- bitmap.example.handlebars
 |       |   |-- inline.mustache
