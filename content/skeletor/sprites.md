@@ -4,7 +4,7 @@ sort: 6
 
 Skeletor comes with easy ways to create 3 different types of sprites.
 
-* [Spritesmith](https://github.com/Ensighten/grunt-spritesmith) to create a bitmap spritesheet with retina support;
+* [Spritesmith](https://github.com/twolfson/gulp.spritesmith) to create a bitmap spritesheet with retina support;
 * [svg-sprite](https://github.com/jkphl/svg-sprite) to create a vector spritesheet made out of svgs.
 * [gulp-inline-svg](https://gitlab.sgalinski.de/toolchain/gulp-inline-svg) to inline an svg directory in the CSS.
 
