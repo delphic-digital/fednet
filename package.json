@@ -13,6 +13,6 @@
     "metalsmith-navigation": "^0.0.7",
     "metalsmith-permalinks": "^0.4.0",
     "metalsmith-watch": "^0.1.1",
-    "nunjucks": "^1.1.0"
+    "nunjucks": "^3.2.0"
   }
 }
